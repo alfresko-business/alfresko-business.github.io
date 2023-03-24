@@ -1,4 +1,7 @@
 // JavaScript //
+
+// Code for four color buttons
+// This code will help user to identify what is the currently selected color button based on user's preference
 var green_button = document.getElementById("button_green");
 var yellow_button = document.getElementById("button_yellow");
 var brown_button = document.getElementById("button_brown");
@@ -50,4 +53,20 @@ red_button.onclick = function() {
     yellow_button.style.color = "white";
     brown_button.style.backgroundColor = "rgb(42, 42, 42)";
     brown_button.style.color = "white";
+}
+
+//
+var cards_chocolate_hills = document.getElementById("cards_chocolate_hills");
+var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");
+var cards_puerto_princesa_underground_river = document.getElementById("cards_puerto_princesa_underground_river");
+
+cards_chocolate_hills.onclick = function() {
+    window.location.href = "chocolate_hills.html";
+}
+cards_banaue_rice_terraces.onclick = function() {
+    window.location.href = "banaue_rice_terraces.html";
+}
+
+cards_puerto_princesa_underground_river.onclick = function() {
+    window.location.href = "puerto_princesa_underground_river.html";
 }
