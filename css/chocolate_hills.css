@@ -1,0 +1,76 @@
+/* Layout/formatting/other backend */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica, inter;
+}
+
+
+
+@font-face {
+    font-family: inter;
+    src: url(../resources/font/Inter-Regular.ttf);
+    font-weight: normal;
+ }
+
+@font-face {
+    font-family: inter;
+    src: url(../resources/font/Inter-Light.ttf);
+    font-weight: light;
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../resources/font/Inter-Bold.ttf);
+    font-weight: bold;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    
+}
+
+
+
+
+
+header {
+    color: white;
+    background-color: #121212;
+}
+
+#header_logo {
+    padding: 35px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.main_content {
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    padding: 100px;
+}
+
+
+
+footer {
+    background-color: #121212;
+    color: white;
+    font-size: 1.6em;
+    display: flex;
+    padding: 100px;
+    justify-content: space-between;
+}
+
+#footer_logo {
+    padding: 50px;
+    max-width: 250px;
+    display: block;
+}
