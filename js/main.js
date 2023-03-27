@@ -1,5 +1,11 @@
 // JavaScript //
 
+var scroll_button = document.getElementById("scroll_button");
+scroll_button.onclick = function() {
+    document.getElementById('main_content').scrollIntoView();
+}
+
+
 // Code for four color buttons
 // This code will help user to identify what is the currently selected color button based on user's preference
 var green_button = document.getElementById("button_green");
