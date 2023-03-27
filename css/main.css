@@ -28,32 +28,44 @@
     font-weight: bold;
 }
 
-html {
-    font-size: 14px;
-}
 
 
 
 
 
 header {
+    display: flex;
     color: white;
     background-color: rgba(0, 0, 0, 0.075);
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-#header_logo {
-    padding: 35px;
+header img {
+    padding: 1px;
     max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
+}
+
+.header_button_container {
+    font-size: 25px;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.header_button_wrapper {
+    background-color: #121212;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
 }
 
 .introductory_content {
     position: relative;
     background-image: url(../resources/images/animated_shapes.svg);
     background-size: cover;
-    height: 700px;
+    height: 900px;
 }
 
 .ic_container img {
@@ -117,6 +129,14 @@ header {
 
 .product_cards_details_wrapper {
     padding: 25px;
+}
+
+.product_cards_details_wrapper p {
+    font-size: 20px;
+}
+
+.product_cards_details_wrapper h3 {
+    font-size: 25px;
 }
 
 .button_container {
