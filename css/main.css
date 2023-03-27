@@ -36,7 +36,7 @@
 header {
     display: flex;
     color: white;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgba(255, 255, 255, 0.997);
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -55,7 +55,8 @@ header img {
 }
 
 .header_button_wrapper {
-    background-color: #121212;
+    color: black;
+    font-weight: bold;
     margin-top: auto;
     margin-bottom: auto;
     padding: 10px;
@@ -149,7 +150,8 @@ header img {
 }
 
 .button_green, .button_yellow, .button_brown, .button_red {
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(243, 243, 243);
+    color: black;
     display: flex;
     padding: 25px;
     border-radius: 35px;
@@ -187,9 +189,6 @@ header img {
     margin-top: 30px;
     border-radius: 20px;
     font-size: .9em;
-    background-color: #7dae8e;
-    background-image: url(../resources/images/countour_line.svg);
-    background-size: cover;
 }
 
 .tourist_spot_cards img {
@@ -215,6 +214,15 @@ header img {
     padding: 50px;
 }
 
+.tourist_spot_cards_green {
+    background-image: url(../resources/images/countour_line.svg);
+    background-size: cover;
+}
+
+.tourist_spot_cards_brown {
+    background-image: url(../resources/images/curve_line.svg);
+    background-size: cover;
+}
 
 
 footer {
