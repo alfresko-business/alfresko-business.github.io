@@ -6,14 +6,32 @@ scroll_button.onclick = function() {
 }
 
 
+
+
+
 // Code for four color buttons
 // This code will help user to identify what is the currently selected color button based on user's preference
 var green_button = document.getElementById("button_green");
 var yellow_button = document.getElementById("button_yellow");
 var brown_button = document.getElementById("button_brown");
 var red_button = document.getElementById("button_red");
+const tourist_spot_cards_green = document.getElementsByClassName("tourist_spot_cards_green");
+const tourist_spot_cards_yellow = document.getElementsByClassName("tourist_spot_cards_yellow");
+const tourist_spot_cards_brown = document.getElementsByClassName("tourist_spot_cards_brown");
+const tourist_spot_cards_red = document.getElementsByClassName("tourist_spot_cards_red");
 
 green_button.onclick = function() {
+    for (let i = 0; i < tourist_spot_cards_green.length; i++) {
+        tourist_spot_cards_green[i].classList.remove("tourist_spot_cards_green_hide");
+        // tourist_spot_cards_yellow[i].classList.add("tourist_spot_cards_yellow_hide");
+        // tourist_spot_cards_red[i].classList.add("tourist_spot_cards_red_hide");
+    }
+
+    for (let i = 0; i < tourist_spot_cards_brown.length; i++) {
+        tourist_spot_cards_brown[i].classList.add("tourist_spot_cards_brown_hide");
+    }
+
+
     green_button.style.backgroundColor = "#7dae8e";
     green_button.style.color = "black";
 
@@ -26,6 +44,10 @@ green_button.onclick = function() {
 }
 
 yellow_button.onclick = function() {
+    for (let i = 0; i < tourist_spot_cards_yellow.length; i++) {
+        tourist_spot_cards_yellow[i].classList.remove("tourist_spot_cards_yellow_hide");
+    }
+
     yellow_button.style.backgroundColor = "#caba73";
     yellow_button.style.color = "black";
 
@@ -38,6 +60,17 @@ yellow_button.onclick = function() {
 }
 
 brown_button.onclick = function() {
+    for (let i = 0; i < tourist_spot_cards_brown.length; i++) {
+        tourist_spot_cards_green[i].classList.add("tourist_spot_cards_green_hide");
+        tourist_spot_cards_brown[i].classList.remove("tourist_spot_cards_brown_hide");
+        // tourist_spot_cards_yellow[i].classList.add("tourist_spot_cards_yellow_hide");
+        // tourist_spot_cards_red[i].classList.add("tourist_spot_cards_red_hide");
+    }
+
+    for (let i = 0; i < tourist_spot_cards_green.length; i++) {
+        tourist_spot_cards_green[i].classList.add("tourist_spot_cards_green_hide");
+    }
+
     brown_button.style.backgroundColor = "#c4997f";
     brown_button.style.color = "black";
 

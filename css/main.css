@@ -266,6 +266,10 @@ box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
     background-size: cover;
 }
 
+.tourist_spot_cards_green_hide, .tourist_spot_cards_yellow_hide, .tourist_spot_cards_brown_hide, .tourist_spot_cards_red_hide {
+    display: none;
+}
+
 
 footer {
     background-color: #121212;
