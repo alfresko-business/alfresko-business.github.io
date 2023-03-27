@@ -36,59 +36,66 @@
 header {
     display: flex;
     color: white;
-    background-color: rgba(255, 255, 255, 0.997);
+    background-color: rgb(0, 0, 0);
     padding-left: 100px;
     padding-right: 100px;
 }
 
 header img {
-    padding: 1px;
     max-width: 200px;
     display: block;
 }
 
 .header_button_container {
-    font-size: 25px;
+    font-size: 20px;
     margin-left: auto;
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .header_button_wrapper {
-    color: black;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
     margin-top: auto;
     margin-bottom: auto;
     padding: 10px;
+    border-radius: 10px;
+    transition: .2s ease-out;
+}
+
+.header_button_wrapper:hover {
+    background-color: #dedede;
+    color: black;
+    
 }
 
 .introductory_content {
     position: relative;
-    background-image: url(../resources/images/animated_shapes.svg);
-    background-size: cover;
-    height: 900px;
+    background-color: bisque;
 }
 
-.ic_container img {
-    object-fit: cover;
-    height: 100%;
+.introductory_content_container {
     width: 100%;
-    opacity: 65%;
-    display: block;
-    /* mask-image: linear-gradient(to right, transparent 1%, white 100%); */
+    height: 700px;
+    background-color: black;
 }
 
-.introductory_content p {
-    font-size: 3rem;
+.introductory_text_wrapper {
     position: absolute;
-    color: rgb(6, 6, 6);
-    top: 290px;
+    color: rgb(255, 255, 255);
+    top: 150px;
     left: 200px;
     /* top: 50%;
     left: 30%;
     transform: translate(-50%,-50%); */
-    display: block;
     width: 500px;
+}
+
+.introductory_content img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 100%;
 }
 
 .main_content {
@@ -202,7 +209,7 @@ header img {
     font-size: 50px;
 }
 
-.tourist_spot_cards_image {
+.tourist_spot_cards_image_wrapper {
     padding: 50px;
     width: 50%;
 }
