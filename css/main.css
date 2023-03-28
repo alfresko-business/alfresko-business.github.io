@@ -126,14 +126,23 @@ header img {
     height: 100%;
     object-fit: cover;
     -webkit-box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
-box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
 }
 
 .main_content {
     font-size: 1.5rem;
     background-color: rgb(255, 255, 255);
+    /* padding: 100px 140px; */
+}
+
+.products {
     padding: 100px 140px;
+    background-image: url(../resources/images/blob_scene.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
 .product_container {
@@ -180,6 +189,16 @@ box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
     font-size: 25px;
 }
 
+.color {
+    padding: 100px 140px;
+    background-image: url(../resources/images/moon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    transition: 2s;
+}
+
 .button_container {
     margin-top: 25px;
     display: flex;
@@ -190,8 +209,8 @@ box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
 }
 
 .button_green, .button_yellow, .button_brown, .button_red {
-    background-color: rgb(243, 243, 243);
-    color: black;
+    background-color: rgb(42, 42, 42);
+    color: rgb(255, 255, 255);
     display: flex;
     padding: 25px;
     border-radius: 35px;
@@ -231,6 +250,9 @@ box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
     border-radius: 20px;
     font-size: .9em;
     cursor: pointer;
+    -webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
 .tourist_spot_cards img {
