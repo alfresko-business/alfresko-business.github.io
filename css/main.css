@@ -48,6 +48,10 @@ header img {
     display: block;
 }
 
+#header_logo {
+    cursor: pointer;
+}
+
 .header_button_container {
     font-size: 20px;
     margin-left: auto;
@@ -244,9 +248,15 @@ header img {
     color: black !important;
 }
 
+.tourist_spot_cards_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .tourist_spot_cards {
     display: flex;
-    margin-top: 30px;
+    margin-top: 0px;
     border-radius: 20px;
     font-size: .9em;
     cursor: pointer;
@@ -303,7 +313,8 @@ footer {
 }
 
 #footer_logo {
-    padding: 50px;
-    max-width: 250px;
+    padding: 0px;
+    max-width: 450px;
     display: block;
+    background-color: #7dae8e;
 }
