@@ -6,6 +6,12 @@
     font-family: helvetica, inter;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 @font-face {
     font-family: inter;
     src: url(../resources/font/Inter-Regular.ttf);
@@ -24,31 +30,52 @@
     font-weight: bold;
 }
 
-html {
-    font-size: 16px;
-}
 
 
 
 
 
 header {
+    display: flex;
     color: white;
-    background-color: #121212;
+    background-color: rgb(27, 27, 27);
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
-#header_logo {
-    padding: 35px;
-    max-width: 250px;
-    margin-left: auto;
-    margin-right: auto;
+header img {
+    max-width: 200px;
     display: block;
 }
 
+#header_logo {
+    cursor: pointer;
+}
+
+.header_button_container {
+    font-size: 20px;
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.header_button_wrapper {
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+
+.header_button_wrapper:hover {
+    background-color: #dedede;
+    color: black;
+    
+}
+
 .main_content {
-    font-size: 1.6rem;
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
     padding: 100px;
 }
 
@@ -59,7 +86,7 @@ footer {
     color: white;
     font-size: 1.6em;
     display: flex;
-    padding: 100px;
+    padding: 100px 140px;
     justify-content: space-between;
 }
 
