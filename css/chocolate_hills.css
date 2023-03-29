@@ -89,6 +89,49 @@ header img {
     padding: 100px;
 }
 
+.overview_container {
+    background-image: url('../resources/images/stacked_peaks_1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    padding: 50px;
+    font-size: 24px;
+    gap: 80px;
+    justify-content: center;
+}
+
+.overview_image_wrapper {
+    width: 30%;
+    height: 100%;
+    text-shadow: #ffffff;
+}
+
+.overview_image_wrapper img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+}
+
+.overview_text_wrapper {
+    width: 40%;
+}
+
+.overview_text_wrapper h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.overview_text_wrapper span {
+    font-weight: bold;
+}
+
+
+
 
 
 
@@ -104,7 +147,7 @@ footer {
     gap: 50px;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 100px 140px;
+    padding: 70px 140px;
 }
 
 .footer_content {
@@ -138,7 +181,8 @@ footer {
 
 .footer_container_2 {
     color: rgb(149, 149, 149);
-    padding: 100px 140px;
+    background-color: rgb(22, 22, 22);
+    padding: 50px 140px;
     display: flex;
     justify-content: space-between;
 }
