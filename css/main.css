@@ -331,8 +331,18 @@ header img {
     background-size: cover;
 }
 
+.tourist_spot_cards_yellow {
+    background-image: url(../resources/images/rect_light.svg);
+    background-size: cover;
+}
+
 .tourist_spot_cards_brown {
     background-image: url(../resources/images/curve_line.svg);
+    background-size: cover;
+}
+
+.tourist_spot_cards_red {
+    background-image: url(../resources/images/blob_scene_1.svg);
     background-size: cover;
 }
 
