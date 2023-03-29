@@ -1,9 +1,16 @@
 // JavaScript //
 
-var scroll_button = document.getElementById("scroll_button");
-scroll_button.onclick = function() {
+var scroll_to_main_content_button = document.getElementById("scroll_to_main_content_button");
+scroll_to_main_content_button.onclick = function() {
     document.getElementById('main_content').scrollIntoView();
 }
+
+var scroll_to_top_button = document.getElementById("scroll_to_top_button");
+scroll_to_top_button.onclick = function() {
+    document.getElementById('header').scrollIntoView();
+}
+
+
 var header_logo = document.getElementById("header_logo");
 var home_button = document.getElementById("home_button");
 var contact_button = document.getElementById("contact_button");
@@ -106,7 +113,7 @@ red_button.onclick = function() {
     brown_button.style.color = "white";
 }
 
-//
+
 var cards_chocolate_hills = document.getElementById("cards_chocolate_hills");
 var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");
 var cards_puerto_princesa_underground_river = document.getElementById("cards_puerto_princesa_underground_river");
