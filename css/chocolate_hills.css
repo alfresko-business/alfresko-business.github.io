@@ -10,7 +10,17 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: helvetica;
+    src: url(../resources/font/Helvetica.ttf);
+    font-weight: normal;
+ }
 
+@font-face {
+    font-family: helvetica;
+    src: url(../resources/font/Helvetica-Bold.ttf);
+    font-weight: bold;
+}
 
 @font-face {
     font-family: inter;
@@ -34,7 +44,6 @@ html {
 
 
 
-
 header {
     display: flex;
     color: white;
@@ -44,6 +53,7 @@ header {
 }
 
 header img {
+    padding: 20px;
     max-width: 200px;
     display: block;
 }
@@ -81,17 +91,63 @@ header img {
 
 
 
+
+
 footer {
-    background-color: #121212;
+    background-color: rgb(18, 18, 18);
     color: white;
-    font-size: 1.6em;
+    font-size: 24px;
+}
+
+.footer_container_1 {
     display: flex;
-    padding: 100px 140px;
+    gap: 50px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 140px;
+}
+
+.footer_content {
+    width: 300px;
 }
 
 #footer_logo {
-    padding: 50px;
-    max-width: 250px;
     display: block;
+    max-width: 200px;
+}
+
+.footer_logo_tagline_wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.footer_logo_tagline_wrapper > p {
+    font-size: 16px;
+    color: rgb(218, 218, 218);
+    margin-top: 10px;
+}
+
+.footer_content_classifier {
+    font-weight: bold;
+}
+
+.footer_content_description {
+    margin-top: 10px;
+    color: rgb(224, 224, 224);
+}
+
+.footer_container_2 {
+    color: rgb(149, 149, 149);
+    padding: 100px 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_container_2 span {
+    color: #ffffff;
+}
+
+.footer_container_2_scroll_up_wrapper > img {
+    max-width: 20px;
+    cursor: pointer;
 }
