@@ -372,7 +372,7 @@ footer {
     flex-direction: column;
 }
 
-.footer_logo_tagline_wrapper > p {
+.footer_logo_tagline_wrapper p {
     font-size: 16px;
     color: rgb(218, 218, 218);
     margin-top: 10px;
@@ -399,7 +399,7 @@ footer {
     color: #ffffff;
 }
 
-.footer_container_2_scroll_up_wrapper > img {
+.footer_container_2_scroll_up_wrapper img {
     max-width: 20px;
     cursor: pointer;
 }

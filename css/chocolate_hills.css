@@ -85,10 +85,6 @@ header img {
     
 }
 
-.main_content {
-    padding: 100px;
-}
-
 .overview_container {
     background-image: url('../resources/images/stacked_peaks_1.svg');
     background-position: center;
@@ -130,9 +126,97 @@ header img {
     font-weight: bold;
 }
 
+.content_container {
+    background-image: url('../resources/images/1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 140px;
+    font-size: 24px;
+}
+
+.history h1 {
+    margin-bottom: 20px;
+}
+
+.history p {
+    margin-bottom: 15px;
+}
+
+.gallery {
+    /* background-image: url('../resources/images/stacked_steps.svg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.gallery h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.gallery_grid_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1rem;
+}
+
+.gallery_grid_tile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.401);
+    transition: .2s ease;
+}
+
+.gallery_grid_tile img:hover{
+    -webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+}
 
 
+.gallery_grid_tile:nth-child(1){
+    grid-column: span 3;
+    grid-row: span 2;
+}
 
+.gallery_grid_tile:nth-child(2), .gallery_grid_tile:nth-child(3){
+    grid-column: span 2;
+}
+
+.gallery_grid_tile:nth-child(6){
+    grid-column: span 2;
+}
+
+.location_container {
+    display: flex;
+    gap: 40px;
+}
+
+.location h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.location_text_wrapper {
+    width: 50%;
+}
+
+.location_map_wrapper {
+    width: 50%;
+}
+
+.location_map_wrapper iframe {
+    border-radius: 25px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+    transition: .2s ease;
+}
+
+.location_map_wrapper iframe:hover {
+    -webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+}
 
 
 
