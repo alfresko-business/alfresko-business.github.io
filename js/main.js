@@ -1,5 +1,25 @@
 // JavaScript //
+// Function for image carousel (aka image slideshow). This will be added soon
+// let slideIndex = 0;
+// showSlides();
 
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("slides");
+
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";  
+//   }
+
+//   slideIndex++;
+//   if (slideIndex > slides.length) {slideIndex = 1}    
+  
+//   slides[slideIndex-1].style.display = "block";  
+//   setTimeout(showSlides, 5000);
+// }
+
+
+// For fast and smooth scrolling to specific content of pages
 var scroll_to_main_content_button = document.getElementById("scroll_to_main_content_button");
 scroll_to_main_content_button.onclick = function() {
     document.getElementById('main_content').scrollIntoView();
@@ -57,7 +77,6 @@ green_button.onclick = function() {
     for (let i = 0; i < tourist_spot_cards_red.length; i++) {
         tourist_spot_cards_red[i].classList.add("tourist_spot_cards_red_hide");
     }
-
 
     green_button.style.backgroundColor = "#7dae8e";
     green_button.style.color = "black";
@@ -155,6 +174,7 @@ red_button.onclick = function() {
 }
 
 
+// For cards to make it clickable and redirect it to their corresponding pages
 var cards_chocolate_hills = document.getElementById("cards_chocolate_hills");
 var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");
 var cards_puerto_princesa_underground_river = document.getElementById("cards_puerto_princesa_underground_river");
