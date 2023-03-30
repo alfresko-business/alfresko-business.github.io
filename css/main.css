@@ -150,7 +150,6 @@ header img {
 .main_content {
     font-size: 24px;
     background-color: rgb(255, 255, 255);
-    /* padding: 100px 140px; */
 }
 
 .products {
@@ -399,8 +398,8 @@ footer {
 
 .footer_container_2 {
     color: rgb(149, 149, 149);
-    background-color: rgb(22, 22, 22);
-    padding: 50px 140px;
+    background-color: rgb(27, 27, 27);
+    padding: 40px 140px;
     display: flex;
     justify-content: space-between;
 }
