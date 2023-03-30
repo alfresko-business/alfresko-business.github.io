@@ -24,7 +24,7 @@ home_button.onclick = function() {
 }
 
 contact_button.onclick = function() {
-    window.location.href = "contact.html";
+    window.location.href = "mailto:alfresko.business@gmail.com";
 }
 
 
