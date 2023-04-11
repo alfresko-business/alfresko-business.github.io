@@ -18,6 +18,10 @@ home_button.onclick = function() {
     window.location.href = "index.html";
 }
 
+shop_button.onclick = function() {
+    window.location.href = "shop.html";
+}
+
 contact_button.onclick = function() {
     window.location.href = "mailto:alfresko.business@gmail.com";
 }
