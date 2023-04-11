@@ -33,6 +33,7 @@ scroll_to_top_button.onclick = function() {
 
 var header_logo = document.getElementById("header_logo");
 var home_button = document.getElementById("home_button");
+var shop_button = document.getElementById("shop_button");
 var contact_button = document.getElementById("contact_button");
 
 header_logo.onclick = function() {
@@ -41,6 +42,10 @@ header_logo.onclick = function() {
 
 home_button.onclick = function() {
     window.location.href = "index.html";
+}
+
+shop_button.onclick = function() {
+    window.location.href = "shop.html";
 }
 
 contact_button.onclick = function() {
