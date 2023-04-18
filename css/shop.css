@@ -188,6 +188,7 @@ footer {
 #footer_logo {
     display: block;
     max-width: 200px;
+    cursor: pointer;
 }
 
 .footer_logo_tagline_wrapper {
