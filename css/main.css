@@ -192,10 +192,10 @@ header img {
 
 .luzon_description_wrapper button {
     padding: 10px 20px;
-    border-style: hidden;
-    border-radius: 10px;
-    background-color: rgb(32, 81, 136);
-    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(95, 99, 104);
+    background: none;
     font-size: .7em;
     margin-top: 20px;
     transition: .2s ease-out;
@@ -203,8 +203,8 @@ header img {
 
 .luzon_description_wrapper button:hover {
     cursor: pointer;
-    background-color: rgb(231, 231, 231);
-    color: rgb(32, 81, 136);
+    background-color: rgb(95, 99, 104);
+    color: white;
 }
 
 .visayas {
@@ -240,10 +240,10 @@ header img {
 
 .visayas_description_wrapper button {
     padding: 10px 20px;
-    border-style: hidden;
-    border-radius: 10px;
-    background-color: rgb(32, 81, 136);
-    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(95, 99, 104);
+    background: none;
     font-size: .7em;
     margin-top: 20px;
     transition: .2s ease-out;
@@ -251,8 +251,8 @@ header img {
 
 .visayas_description_wrapper button:hover {
     cursor: pointer;
-    background-color: rgb(231, 231, 231);
-    color: rgb(32, 81, 136);
+    background-color: rgb(95, 99, 104);
+    color: white;
 }
 
 .mindanao {
@@ -288,10 +288,10 @@ header img {
 
 .mindanao_description_wrapper button {
     padding: 10px 20px;
-    border-style: hidden;
-    border-radius: 10px;
-    background-color: rgb(32, 81, 136);
-    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(95, 99, 104);
+    background: none;
     font-size: .7em;
     margin-top: 20px;
     transition: .2s ease-out;
@@ -299,8 +299,8 @@ header img {
 
 .mindanao_description_wrapper button:hover {
     cursor: pointer;
-    background-color: rgb(231, 231, 231);
-    color: rgb(32, 81, 136);
+    background-color: rgb(95, 99, 104);
+    color: white;
 }
 
 
