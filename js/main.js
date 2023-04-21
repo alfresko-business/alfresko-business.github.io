@@ -58,6 +58,17 @@ footer_logo.onclick = function() {
 }
 
 
+var luzon_tourist_spots_button = document.getElementById("luzon_tourist_spots_button");
+luzon_tourist_spots_button.onclick = function() {
+    window.location.href = "luzon_tourist_spots.html"
+}
+
+var visayas_tourist_spots_button = document.getElementById("visayas_tourist_spots_button");
+visayas_tourist_spots_button.onclick = function() {
+    window.location.href = "visayas_tourist_spots.html"
+}
+
+
 // For cards to make it clickable and redirect it to their corresponding pages
 var cards_chocolate_hills = document.getElementById("cards_chocolate_hills");
 var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");

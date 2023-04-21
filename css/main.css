@@ -83,7 +83,6 @@ header img {
 .header_button_wrapper:hover {
     background-color: #dedede;
     color: black;
-    
 }
 
 .introductory_content {
@@ -159,113 +158,149 @@ header img {
 }
 
 .luzon {
-    background-image: url(../resources/images/mayon_volcano-aom-waifu2x.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
+    background-color: #ffffff;
+    display: flex;
     margin-top: 20px;
-    text-align: center;
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
 }
 
-.luzon_description_wrapper {
-    border-radius: 15px 15px 0px 0px;
-    padding: 40px 50px;
-    background-color: #42424294;
+.luzon_featured_image_wrapper {
+    width: 30%;
 }
 
-.luzon_description_wrapper p {
-    font-size: .8em;
-    margin-top: 5px;
-    color: rgb(255, 255, 255);
-}
-
-.luzon_tourist_spot_cards_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 25px;
-}
-
-.luzon_tourist_spot_cards {
-    display: flex;
-    margin-top: 0px;
-    font-size: .7em;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
-    transition: .2s;
-    width: 48%;
-    background-color: #3a9161;
-    background-size: cover;
-    color: rgb(255, 255, 255);
-}
-
-.luzon_tourist_spot_cards:hover {
-    -webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
-    -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.401);
-    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
-}
-
-.luzon_tourist_spot_cards img, .visayas_tourist_spot_cards img {
+.luzon_featured_image_wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.luzon_tourist_spot_cards h2, .visayas_tourist_spot_cards h2 {
-    font-size: 1.7em;
+.luzon_description_wrapper {
+    padding: 50px;
+    width: 70%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.tourist_spot_cards_image_wrapper {
-    width: 100%;
+.luzon_description_wrapper p {
+    font-size: .8em;
+    margin-top: 5px;
+    color: rgb(58, 58, 58);
 }
 
-.tourist_spot_cards_description_wrapper {
-    width: 90%;
-    padding: 35px;
+.luzon_description_wrapper button {
+    padding: 10px 20px;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: rgb(32, 81, 136);
+    color: white;
+    font-size: .7em;
+    margin-top: 20px;
+    transition: .2s ease-out;
+}
+
+.luzon_description_wrapper button:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    color: rgb(32, 81, 136);
 }
 
 .visayas {
-    background-image: url(../resources/images/chocolate_hills-aom_realesrgan.png);
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 15px 15px 0px 0px;
-    margin-top: 100px;
-    text-align: center;
-    color: rgb(240, 240, 240);
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.visayas_featured_image_wrapper {
+    width: 30%;
+}
+
+.visayas_featured_image_wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .visayas_description_wrapper {
-    border-radius: 15px 15px 0px 0px;
-    padding: 40px 50px;
-    background-color: #42424294;
+    padding: 50px;
+    width: 70%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.visayas_tourist_spot_cards_container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 25px;
+.visayas_description_wrapper p {
+    font-size: .8em;
+    margin-top: 5px;
+    color: rgb(58, 58, 58);
 }
 
-.visayas_tourist_spot_cards {
-    display: flex;
-    margin-top: 0px;
+.visayas_description_wrapper button {
+    padding: 10px 20px;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: rgb(32, 81, 136);
+    color: white;
     font-size: .7em;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
-    transition: .2s;
-    width: 48%;
-    background-color: #3a6791;
-    background-size: cover;
-    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    transition: .2s ease-out;
 }
+
+.visayas_description_wrapper button:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    color: rgb(32, 81, 136);
+}
+
+.mindanao {
+    background-color: #ffffff;
+    display: flex;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.mindanao_featured_image_wrapper {
+    width: 30%;
+}
+
+.mindanao_featured_image_wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mindanao_description_wrapper {
+    padding: 50px;
+    width: 70%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mindanao_description_wrapper p {
+    font-size: .8em;
+    margin-top: 5px;
+    color: rgb(58, 58, 58);
+}
+
+.mindanao_description_wrapper button {
+    padding: 10px 20px;
+    border-style: hidden;
+    border-radius: 10px;
+    background-color: rgb(32, 81, 136);
+    color: white;
+    font-size: .7em;
+    margin-top: 20px;
+    transition: .2s ease-out;
+}
+
+.mindanao_description_wrapper button:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    color: rgb(32, 81, 136);
+}
+
 
 
 
