@@ -64,13 +64,15 @@ header img {
 }
 
 .header_button_container {
-    font-size: 20px;
     margin-left: auto;
     display: flex;
     gap: 40px;
 }
 
 .header_button_wrapper {
+    font-size: 20px;
+    border: none;
+    background: none;
     color: rgb(255, 255, 255);
     margin-top: auto;
     margin-bottom: auto;
