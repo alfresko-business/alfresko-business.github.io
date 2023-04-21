@@ -359,8 +359,56 @@ header img {
     color: rgb(218, 218, 218);
 }
 
+.virtual_tour {
+    font-size: 24px;
+    color: black;
+    padding: 100px 140px;
+    background: #C9FFBF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.virtual_tour_card_container {
+    display: flex;
+    gap: 25px;
+}
 
+.virtual_tour_card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background-color: #232323;
+    color: white;
+    width: 300px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+    transition: .2s ease;
+}
+
+.virtual_tour_card:hover {
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+}
+
+.virtual_tour_image_wrapper {
+    max-width: 100%;
+    height: 200px;
+}
+
+.virtual_tour_image_wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.virtual_tour_description_wrapper {
+    padding: 40px;
+}
+
+.virtual_tour_description_wrapper p {
+    font-size: .8em;
+    margin-top: 10px;
+    color: rgb(196, 196, 196);
+}
 
 
 footer {
