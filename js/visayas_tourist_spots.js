@@ -23,3 +23,10 @@ contact_button.onclick = function() {
 footer_logo.onclick = function() {
     window.location.href = "index.html";
 }
+
+// For cards to make it clickable and redirect it to their corresponding pages
+var cards_chocolate_hills = document.getElementById("cards_chocolate_hills");
+
+cards_chocolate_hills.onclick = function() {
+    window.location.href = "chocolate_hills.html";
+}

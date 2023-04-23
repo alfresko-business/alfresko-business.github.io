@@ -177,12 +177,6 @@ footer {
     flex-direction: column;
 }
 
-.footer_logo_tagline_wrapper p {
-    font-size: 16px;
-    color: rgb(218, 218, 218);
-    margin-top: 10px;
-}
-
 .footer_content_classifier {
     font-weight: bold;
 }

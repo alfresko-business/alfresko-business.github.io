@@ -20,9 +20,9 @@
 
 
 // For fast and smooth scrolling to specific content of pages
-var scroll_to_main_content_button = document.getElementById("scroll_to_main_content_button");
-scroll_to_main_content_button.onclick = function() {
-    document.getElementById('main_content').scrollIntoView();
+var scroll_to_tourist_destination_section_button = document.getElementById("scroll_to_tourist_destination_section_button");
+scroll_to_tourist_destination_section_button.onclick = function() {
+    document.getElementById('tourist_destination_section').scrollIntoView();
 }
 
 var scroll_to_top_button = document.getElementById("scroll_to_top_button");
@@ -58,29 +58,17 @@ footer_logo.onclick = function() {
 }
 
 
-var luzon_tourist_spots_button = document.getElementById("luzon_tourist_spots_button");
-luzon_tourist_spots_button.onclick = function() {
+var luzon_card_button = document.getElementById("luzon_card_button");
+luzon_card_button.onclick = function() {
     window.location.href = "luzon_tourist_spots.html"
 }
 
-var visayas_tourist_spots_button = document.getElementById("visayas_tourist_spots_button");
-visayas_tourist_spots_button.onclick = function() {
+var visayas_card_button = document.getElementById("visayas_card_button");
+visayas_card_button.onclick = function() {
     window.location.href = "visayas_tourist_spots.html"
 }
 
-
-// For cards to make it clickable and redirect it to their corresponding pages
-var cards_chocolate_hills = document.getElementById("cards_chocolate_hills");
-var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");
-var cards_puerto_princesa_underground_river = document.getElementById("cards_puerto_princesa_underground_river");
-
-cards_chocolate_hills.onclick = function() {
-    window.location.href = "chocolate_hills.html";
-}
-cards_banaue_rice_terraces.onclick = function() {
-    window.location.href = "banaue_rice_terraces.html";
-}
-
-cards_puerto_princesa_underground_river.onclick = function() {
-    window.location.href = "puerto_princesa_underground_river.html";
+var mindanao_card_button = document.getElementById("mindanao_card_button");
+mindanao_card_button.onclick = function() {
+    window.location.href = "mindanao_tourist_spots.html"
 }

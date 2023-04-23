@@ -1,4 +1,4 @@
-/* Layout/formatting/other backend */
+/* Layout/formatting/etc. */
 * {
     padding: 0;
     margin: 0;
@@ -39,7 +39,6 @@ html {
     src: url(../resources/font/Inter-Bold.ttf);
     font-weight: bold;
 }
-
 
 
 
@@ -87,12 +86,12 @@ header img {
     color: black;
 }
 
-.introductory_content {
+.welcome_section {
     position: relative;
     background-color: bisque;
 }
 
-.introductory_content_container {
+.welcome_section_container {
     display: flex;
     width: 100%;
     height: 800px;
@@ -104,41 +103,41 @@ header img {
     background-size: cover;
 }
 
-.introductory_details_container {
+.welcome_details_container {
     color: rgb(255, 255, 255);
     width: 30%;
     display: flex;
     flex-direction: column;
 }
 
-.introductory_details_container button {
+.welcome_details_container button {
     background-color: #232323;
     color: rgb(255, 255, 255);
     padding: 15px 30px;
-    font-size: 20px;
+    font-size: 24px;
     border-radius: 10px;
     border: none;
     transition: .2s;
     cursor: pointer;
 }
 
-.introductory_details_container button:hover {
-    background-color: #ffffff;
+.welcome_details_container button:hover {
+    background-color: rgb(255, 255, 255);
     color: #751929;
 }
 
-.introductory_button_wrapper {
+.welcome_button_wrapper {
     margin-top: auto;
 }
 
-.introductory_image_slider_wrapper {
+.welcome_image_slider_wrapper {
     max-width: 60%;
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.introductory_image_slider_wrapper img {
+.welcome_image_slider_wrapper img {
     display: block;
     max-width: 100%;
     height: 100%;
@@ -148,7 +147,7 @@ header img {
     box-shadow: 0px 3px 26px 1px rgba(0,0,0,0.75);
 }
 
-.main_content {
+.tourist_destination_section {
     font-size: 24px;
     background-color: rgb(255, 255, 255);
     padding: 100px 140px;
@@ -159,11 +158,14 @@ header img {
     color: black;
 }
 
-.luzon {
+.tourist_destination_section p {
+    color: rgb(36, 36, 36);
+}
+
+.luzon_card {
     background-color: #ffffff;
     display: flex;
     margin-top: 20px;
-    color: rgb(0, 0, 0);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1136%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(99%2c 207%2c 177%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c541.195C102.769%2c563.634%2c223.28%2c538.851%2c300.158%2c467.055C375.427%2c396.761%2c349.089%2c272.598%2c389.184%2c177.735C427.625%2c86.785%2c548.472%2c20.783%2c529.759%2c-76.168C510.848%2c-174.148%2c380.701%2c-199.575%2c304.031%2c-263.444C242%2c-315.119%2c192.197%2c-375.751%2c122.083%2c-415.778C34.313%2c-465.884%2c-58.191%2c-556.706%2c-154.158%2c-525.014C-250.838%2c-493.087%2c-243.553%2c-345.614%2c-313.736%2c-271.854C-389.392%2c-192.341%2c-543.578%2c-187.827%2c-575.041%2c-82.678C-605.706%2c19.805%2c-524.545%2c125.541%2c-457.612%2c208.985C-399.703%2c281.178%2c-301.18%2c297.736%2c-226.286%2c352.107C-145.097%2c411.048%2c-98.019%2c519.793%2c0%2c541.195' fill='%233abb97'%3e%3c/path%3e%3cpath d='M1440 953.268C1528.006 961.163 1619.017 1000.259 1699.495 963.781 1782.8899999999999 925.981 1840.929 843.435 1872.186 757.373 1902.268 674.545 1894.4569999999999 582.607 1868.52 498.388 1844.962 421.89300000000003 1791.347 360.937 1733.167 305.969 1679.595 255.35399999999998 1617.397 217.361 1547.224 194.82999999999998 1475.656 171.851 1400.969 161.539 1327.13 175.601 1248.142 190.64299999999997 1176.243 226.68 1113.8220000000001 277.365 1041.935 335.736 949.355 396.08500000000004 941.919 488.387 934.4549999999999 581.037 1028.8229999999999 646.4 1077.726 725.4449999999999 1119.681 793.26 1141.292 877.307 1208.797 919.759 1276.081 962.072 1360.835 946.1659999999999 1440 953.268' fill='%2392ddc8'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1136'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,21 +173,21 @@ header img {
     transition: .2s ease;
 }
 
-.luzon:hover {
+.luzon_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
-.luzon_featured_image_wrapper {
+.luzon_card_featured_image_wrapper {
     width: 30%;
 }
 
-.luzon_featured_image_wrapper img {
+.luzon_card_featured_image_wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.luzon_description_wrapper {
+.luzon_card_description_wrapper {
     padding: 50px;
     width: 70%;
     text-align: center;
@@ -193,13 +195,13 @@ header img {
     margin-bottom: auto;
 }
 
-.luzon_description_wrapper p {
+.luzon_card_description_wrapper p {
     font-size: .8em;
     margin-top: 5px;
     color: rgb(58, 58, 58);
 }
 
-.luzon_description_wrapper button {
+.luzon_card_description_wrapper button {
     padding: 10px 20px;
     border-style: solid;
     border-radius: 5px;
@@ -210,17 +212,16 @@ header img {
     transition: .2s ease-out;
 }
 
-.luzon_description_wrapper button:hover {
+.luzon_card_description_wrapper button:hover {
     cursor: pointer;
     background-color: rgb(59, 124, 106);
     color: white;
 }
 
-.visayas {
+.visayas_card {
     background-color: #ffffff;
     display: flex;
     margin-top: 30px;
-    color: rgb(0, 0, 0);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1051%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(99%2c 184%2c 207%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c479.741C86.928%2c464.303%2c144.025%2c386.757%2c213.734%2c332.577C276.548%2c283.756%2c345.677%2c244.414%2c388.795%2c177.557C436.578%2c103.465%2c482.984%2c19.614%2c471.985%2c-67.861C460.936%2c-155.735%2c390%2c-220.779%2c330.467%2c-286.351C272.201%2c-350.528%2c210.615%2c-411.25%2c130.399%2c-444.098C44.315%2c-479.349%2c-56.839%2c-519.484%2c-140.738%2c-479.309C-224.748%2c-439.081%2c-242.362%2c-329.291%2c-283.683%2c-245.813C-314.923%2c-182.7%2c-345.978%2c-120.818%2c-352.876%2c-50.736C-359.551%2c17.08%2c-334.389%2c80.145%2c-322.367%2c147.22C-305.782%2c239.748%2c-334.242%2c350.784%2c-268.81%2c418.277C-203.509%2c485.635%2c-92.371%2c496.146%2c0%2c479.741' fill='%2350b0c9'%3e%3c/path%3e%3cpath d='M1440 1047.893C1551.192 1037.0439999999999 1663.087 1109.19 1767.6390000000001 1069.817 1880.33 1027.379 1971.231 934.883 2025.518 827.3969999999999 2080.886 717.771 2111.431 585.234 2070.946 469.284 2032.0819999999999 357.977 1901.118 316.053 1817.839 232.601 1742.155 156.76 1697.286 54.132000000000005 1604.022 1.3909999999999627 1495.685-59.874000000000024 1364.865-135.49099999999999 1249.496-88.79600000000005 1132.835-41.577999999999975 1125.101 121.476 1052.804 224.493 990.123 313.808 874.841 368.674 853.368 475.655 831.639 583.9110000000001 905.483 683.514 939.594 788.528 978.749 909.069 955.999 1079.7060000000001 1068.524 1138.028 1183.988 1197.874 1310.563 1060.522 1440 1047.893' fill='%2376c1d5'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1051'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,21 +229,21 @@ header img {
     transition: .2s ease;
 }
 
-.visayas:hover {
+.visayas_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
-.visayas_featured_image_wrapper {
+.visayas_card_featured_image_wrapper {
     width: 30%;
 }
 
-.visayas_featured_image_wrapper img {
+.visayas_card_featured_image_wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.visayas_description_wrapper {
+.visayas_card_description_wrapper {
     padding: 50px;
     width: 70%;
     text-align: center;
@@ -250,13 +251,13 @@ header img {
     margin-bottom: auto;
 }
 
-.visayas_description_wrapper p {
+.visayas_card_description_wrapper p {
     font-size: .8em;
     margin-top: 5px;
     color: rgb(58, 58, 58);
 }
 
-.visayas_description_wrapper button {
+.visayas_card_description_wrapper button {
     padding: 10px 20px;
     border-style: solid;
     border-radius: 5px;
@@ -267,17 +268,16 @@ header img {
     transition: .2s ease-out;
 }
 
-.visayas_description_wrapper button:hover {
+.visayas_card_description_wrapper button:hover {
     cursor: pointer;
     background-color: rgb(60, 114, 128);
     color: white;
 }
 
-.mindanao {
+.mindanao_card {
     background-color: #ffffff;
     display: flex;
     margin-top: 30px;
-    color: rgb(0, 0, 0);
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1020%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(215%2c 173%2c 138%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c691.088C128.263%2c713.99%2c254.844%2c637.05%2c359.736%2c559.761C460.488%2c485.523%2c530.176%2c379.654%2c579.03%2c264.434C626.89%2c151.558%2c643.003%2c30.974%2c635.839%2c-91.42C628.158%2c-222.644%2c628.582%2c-371.091%2c536.351%2c-464.751C444.748%2c-557.773%2c292.732%2c-533.663%2c166.722%2c-567.804C44.032%2c-601.045%2c-68.812%2c-680.997%2c-194.615%2c-662.798C-327.805%2c-643.53%2c-449.173%2c-567.28%2c-537.68%2c-465.903C-626.363%2c-364.324%2c-676.229%2c-233.191%2c-687.031%2c-98.78C-697.447%2c30.83%2c-674.298%2c168.072%2c-597.037%2c272.657C-525.141%2c369.98%2c-384.761%2c375.073%2c-285.674%2c444.518C-180.535%2c518.205%2c-126.391%2c668.52%2c0%2c691.088' fill='%23d3a47d'%3e%3c/path%3e%3cpath d='M1440 1256.896C1569.9569999999999 1235.071 1602.517 1056.087 1708.41 977.653 1803.672 907.0930000000001 1945.746 916.552 2022.02 825.8 2106.7380000000003 725 2187.605 583.14 2144.571 458.698 2100.3630000000003 330.861 1910.636 330.954 1817.105 233.23700000000002 1730.882 143.154 1744.233-35.24800000000005 1628.163-80.82299999999998 1513.81-125.72400000000005 1401.047-8.605999999999995 1282.407 23.28800000000001 1160.049 56.182000000000016 1010.972 21.20799999999997 920.12 109.52199999999999 828.701 198.38799999999998 822.421 343.61400000000003 821.723 471.105 821.087 587.26 867.028 693.977 916.343 799.146 965.193 903.321 1020.014 1002.99 1106.642 1078.7150000000001 1203.465 1163.3519999999999 1313.175 1278.1950000000002 1440 1256.896' fill='%23dcb697'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1020'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-size: cover;
@@ -285,21 +285,21 @@ header img {
     transition: .2s ease;
 }
 
-.mindanao:hover {
+.mindanao_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
-.mindanao_featured_image_wrapper {
+.mindanao_card_featured_image_wrapper {
     width: 30%;
 }
 
-.mindanao_featured_image_wrapper img {
+.mindanao_card_featured_image_wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.mindanao_description_wrapper {
+.mindanao_card_description_wrapper {
     padding: 50px;
     width: 70%;
     text-align: center;
@@ -307,13 +307,13 @@ header img {
     margin-bottom: auto;
 }
 
-.mindanao_description_wrapper p {
+.mindanao_card_description_wrapper p {
     font-size: .8em;
     margin-top: 5px;
     color: rgb(58, 58, 58);
 }
 
-.mindanao_description_wrapper button {
+.mindanao_card_description_wrapper button {
     padding: 10px 20px;
     border-style: solid;
     border-radius: 5px;
@@ -324,13 +324,13 @@ header img {
     transition: .2s ease-out;
 }
 
-.mindanao_description_wrapper button:hover {
+.mindanao_card_description_wrapper button:hover {
     cursor: pointer;
     background-color: rgb(129, 104, 84);
     color: white;
 }
 
-.random_fact_container {
+.random_fact_section {
     display: flex;
     justify-content: space-between;
     font-size: 24px;
@@ -356,16 +356,19 @@ header img {
 
 .random_fact_description_wrapper p {
     margin-top: 20px;
-    color: rgb(218, 218, 218);
+    color: rgb(231, 231, 231);
 }
 
-.virtual_tour {
+.virtual_tour_section {
     font-size: 24px;
-    color: black;
     padding: 100px 140px;
     background: #C9FFBF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.virtual_tour_section p {
+    color: rgb(36, 36, 36);
 }
 
 .virtual_tour_card_container {
@@ -392,18 +395,18 @@ header img {
     cursor: pointer;
 }
 
-.virtual_tour_image_wrapper {
+.virtual_tour_card_image_wrapper {
     max-width: 100%;
     height: 200px;
 }
 
-.virtual_tour_image_wrapper img {
+.virtual_tour_card_image_wrapper img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.virtual_tour_description_wrapper {
+.virtual_tour_card_description_wrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -412,19 +415,18 @@ header img {
     margin-bottom: auto;
 }
 
-.virtual_tour_description_wrapper h3 {
+.virtual_tour_card_description_wrapper h3 {
     font-size: 1em;
 }
 
-.virtual_tour_description_wrapper p {
+.virtual_tour_card_description_wrapper p {
     margin-top: 10px;
     font-size: .8em;
-    color: rgb(196, 196, 196);
+    color: rgb(231, 231, 231);
 }
 
-.games {
+.games_section {
     font-size: 24px;
-    color: black;
     padding: 100px 140px;
 }
 
@@ -532,12 +534,6 @@ footer {
 .footer_logo_tagline_wrapper {
     display: inline-flex;
     flex-direction: column;
-}
-
-.footer_logo_tagline_wrapper p {
-    font-size: 16px;
-    color: rgb(218, 218, 218);
-    margin-top: 10px;
 }
 
 .footer_content_classifier {
