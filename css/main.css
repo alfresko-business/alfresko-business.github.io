@@ -422,6 +422,88 @@ header img {
     color: rgb(196, 196, 196);
 }
 
+.games {
+    font-size: 24px;
+    color: black;
+    padding: 100px 140px;
+}
+
+.games_card_container {
+    display: flex;
+    gap: 10px;
+}
+
+.games_card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 400px;
+    width: calc(25% - 10px);
+    padding: 50px 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.games_card img {
+    max-width: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.games_card h2 {
+    margin-top: 10px;
+    font-size: 1.0em;
+}
+
+.games_card p {
+    font-size: .8em;
+    color: rgb(58, 58, 58);
+}
+
+.jigsaw_puzzle_game {
+    background-color: #78cad8;
+}
+
+.jigsaw_puzzle_game button {
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #5798a3;
+    background: none;
+    font-size: .7em;
+    margin-top: auto;
+    transition: .2s ease-out;
+    align-self: center;
+}
+
+.jigsaw_puzzle_game button:hover {
+    cursor: pointer;
+    background-color: #5798a3;
+    color: white;
+}
+
+.word_hunt_game {
+    background-color: #f7d99a;
+}
+
+.word_hunt_game button {
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #a89469;
+    background: none;
+    font-size: .7em;
+    margin-top: auto;
+    transition: .2s ease-out;
+    align-self: center;
+}
+
+.word_hunt_game button:hover {
+    cursor: pointer;
+    background-color: #a89469;
+    color: white;
+}
+
 
 footer {
     background-color: rgb(18, 18, 18);
