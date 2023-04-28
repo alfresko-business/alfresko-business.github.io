@@ -88,24 +88,23 @@ header img {
 
 .welcome_section {
     position: relative;
-    background-color: bisque;
-}
-
-.welcome_section_container {
-    display: flex;
-    width: 100%;
-    height: 800px;
-    padding: 130px 200px;
-    justify-content: space-between;
-    background-image: url(../resources/images/stacked_peaks.svg);
+    background-image: url(../resources/images/beach-rabin_shasha_on_unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.welcome_section_container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 25vh 200px;
+    background-color: rgba(3, 3, 3, 0.3);
+}
+
 .welcome_details_container {
     color: rgb(255, 255, 255);
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -127,7 +126,7 @@ header img {
 }
 
 .welcome_button_wrapper {
-    margin-top: auto;
+    margin-top: 100px;
 }
 
 .welcome_image_slider_wrapper {
@@ -171,14 +170,26 @@ header img {
     background-size: cover;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
     transition: .2s ease;
+    overflow: hidden;
 }
 
 .luzon_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
+.luzon_card img {
+    transition: all 0.2s ease;
+}
+
+.luzon_card:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    opacity: .7;
+}
+
 .luzon_card_featured_image_wrapper {
     width: 30%;
+    overflow: hidden;
 }
 
 .luzon_card_featured_image_wrapper img {
@@ -227,14 +238,26 @@ header img {
     background-size: cover;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
     transition: .2s ease;
+    overflow: hidden;
 }
 
 .visayas_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
+.visayas_card img {
+    transition: all 0.2s ease;
+}
+
+.visayas_card:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    opacity: .7;
+}
+
 .visayas_card_featured_image_wrapper {
     width: 30%;
+    overflow: hidden;
 }
 
 .visayas_card_featured_image_wrapper img {
@@ -283,6 +306,21 @@ header img {
     background-size: cover;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
     transition: .2s ease;
+    overflow: hidden;
+}
+
+.mindanao_card:hover {
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+}
+
+.mindanao_card img {
+    transition: all 0.2s ease;
+}
+
+.mindanao_card:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    opacity: .7;
 }
 
 .mindanao_card:hover {
@@ -291,6 +329,7 @@ header img {
 
 .mindanao_card_featured_image_wrapper {
     width: 30%;
+    overflow: hidden;
 }
 
 .mindanao_card_featured_image_wrapper img {
@@ -374,7 +413,7 @@ header img {
 .virtual_tour_card_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
 
 .virtual_tour_card {
@@ -384,7 +423,7 @@ header img {
     margin-top: 20px;
     background-color: #232323;
     color: white;
-    width: calc(25% - 10px);
+    width: calc(25% - 20px);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
     transition: .2s ease;
     text-align: center;
@@ -395,9 +434,20 @@ header img {
     cursor: pointer;
 }
 
+.virtual_tour_card img {
+    transition: all 0.2s ease;
+}
+
+.virtual_tour_card:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    opacity: .7;
+}
+
 .virtual_tour_card_image_wrapper {
     max-width: 100%;
     height: 200px;
+    overflow: hidden;
 }
 
 .virtual_tour_card_image_wrapper img {
@@ -426,33 +476,58 @@ header img {
 }
 
 .games_section {
+    background-image: url("../resources/images/cartoon_scenery_background-upklyak_on_freepik.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #616161;
+}
+
+.games_section_container {
+    color: white;
     font-size: 24px;
     padding: 100px 140px;
+    background-color: rgba(18, 18, 18, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .games_card_container {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    flex-direction: column;
+    width: 70%;
+}
+
+.games_card_heading_wrapper{
+     margin-top: auto;
+     margin-bottom: auto;
 }
 
 .games_card {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    height: 400px;
-    width: calc(25% - 10px);
-    padding: 50px 40px;
+    flex-direction: row;
+    padding: 30px 40px;
     border-radius: 10px;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
     text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+    transition: .2s ease;
+}
+
+.games_card:hover {
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
 .games_card img {
     max-width: 90px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .games_card h2 {
+    color: black;
     margin-top: 10px;
     font-size: 1.0em;
 }
@@ -460,6 +535,24 @@ header img {
 .games_card p {
     font-size: .8em;
     color: rgb(58, 58, 58);
+}
+
+.games_card_content_image_wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 1;
+}
+
+.games_card_content_details_wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 2;
+}
+
+.games_card_content_button_wrapper {
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-grow: 1;
 }
 
 .jigsaw_puzzle_game {
@@ -473,9 +566,7 @@ header img {
     border-color: #5798a3;
     background: none;
     font-size: .7em;
-    margin-top: auto;
     transition: .2s ease-out;
-    align-self: center;
 }
 
 .jigsaw_puzzle_game button:hover {
