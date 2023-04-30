@@ -110,7 +110,7 @@ header img {
 }
 
 .welcome_details_container button {
-    background-color: #232323;
+    background-color: rgb(35, 35, 35);
     color: rgb(255, 255, 255);
     padding: 15px 30px;
     font-size: 24px;
@@ -122,7 +122,7 @@ header img {
 
 .welcome_details_container button:hover {
     background-color: rgb(255, 255, 255);
-    color: #751929;
+    color: rgb(117, 25, 41);
 }
 
 .welcome_button_wrapper {
@@ -162,7 +162,7 @@ header img {
 }
 
 .luzon_card {
-    background-color: #ffffff;
+    background-color: rgb(255, 255, 255);
     display: flex;
     margin-top: 20px;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1136%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(99%2c 207%2c 177%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c541.195C102.769%2c563.634%2c223.28%2c538.851%2c300.158%2c467.055C375.427%2c396.761%2c349.089%2c272.598%2c389.184%2c177.735C427.625%2c86.785%2c548.472%2c20.783%2c529.759%2c-76.168C510.848%2c-174.148%2c380.701%2c-199.575%2c304.031%2c-263.444C242%2c-315.119%2c192.197%2c-375.751%2c122.083%2c-415.778C34.313%2c-465.884%2c-58.191%2c-556.706%2c-154.158%2c-525.014C-250.838%2c-493.087%2c-243.553%2c-345.614%2c-313.736%2c-271.854C-389.392%2c-192.341%2c-543.578%2c-187.827%2c-575.041%2c-82.678C-605.706%2c19.805%2c-524.545%2c125.541%2c-457.612%2c208.985C-399.703%2c281.178%2c-301.18%2c297.736%2c-226.286%2c352.107C-145.097%2c411.048%2c-98.019%2c519.793%2c0%2c541.195' fill='%233abb97'%3e%3c/path%3e%3cpath d='M1440 953.268C1528.006 961.163 1619.017 1000.259 1699.495 963.781 1782.8899999999999 925.981 1840.929 843.435 1872.186 757.373 1902.268 674.545 1894.4569999999999 582.607 1868.52 498.388 1844.962 421.89300000000003 1791.347 360.937 1733.167 305.969 1679.595 255.35399999999998 1617.397 217.361 1547.224 194.82999999999998 1475.656 171.851 1400.969 161.539 1327.13 175.601 1248.142 190.64299999999997 1176.243 226.68 1113.8220000000001 277.365 1041.935 335.736 949.355 396.08500000000004 941.919 488.387 934.4549999999999 581.037 1028.8229999999999 646.4 1077.726 725.4449999999999 1119.681 793.26 1141.292 877.307 1208.797 919.759 1276.081 962.072 1360.835 946.1659999999999 1440 953.268' fill='%2392ddc8'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1136'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
@@ -404,7 +404,7 @@ header img {
 .virtual_tour_section {
     font-size: 24px;
     padding: 100px 140px;
-    background: #C9FFBF;  /* fallback for old browsers */
+    background: rgb(201, 255, 191);  /* fallback for old browsers */
     background: -webkit-linear-gradient(to left, #FFAFBD, #C9FFBF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #FFAFBD, #C9FFBF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -424,7 +424,7 @@ header img {
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 20px;
-    background-color: #232323;
+    background-color: rgb(35, 35, 35);
     color: white;
     width: calc(25% - 20px);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
@@ -437,7 +437,7 @@ header img {
     cursor: pointer;
     transform: scale(1.05);
     background-color: rgb(231, 231, 231);
-    color: #232323;
+    color: rgb(35, 35, 35);
 }
 
 .virtual_tour_card:hover p {
@@ -490,7 +490,7 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #616161;
+    background-color: rgb(97, 97, 97);
 }
 
 .games_section_container {
@@ -567,14 +567,14 @@ header img {
 }
 
 .jigsaw_puzzle_game {
-    background-color: #78cad8;
+    background-color: rgb(120, 202, 216);
 }
 
 .jigsaw_puzzle_game button {
     padding: 10px 20px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #5798a3;
+    border-color: rgb(87, 152, 163);
     background: none;
     font-size: .7em;
     transition: .2s ease-out;
@@ -582,19 +582,19 @@ header img {
 
 .jigsaw_puzzle_game button:hover {
     cursor: pointer;
-    background-color: #5798a3;
+    background-color: rgb(87, 152, 163);
     color: white;
 }
 
 .word_hunt_game {
-    background-color: #f7d99a;
+    background-color: rgb(247, 217, 154);
 }
 
 .word_hunt_game button {
     padding: 10px 20px;
     border-style: solid;
     border-radius: 5px;
-    border-color: #a89469;
+    border-color: rgb(168, 148, 105);
     background: none;
     font-size: .7em;
     margin-top: auto;
@@ -604,7 +604,7 @@ header img {
 
 .word_hunt_game button:hover {
     cursor: pointer;
-    background-color: #a89469;
+    background-color: rgb(168, 148, 105);
     color: white;
 }
 
