@@ -175,6 +175,7 @@ header img {
 
 .luzon_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+    transform: scale(1.02);
 }
 
 .luzon_card img {
@@ -243,6 +244,7 @@ header img {
 
 .visayas_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+    transform: scale(1.02);
 }
 
 .visayas_card img {
@@ -311,6 +313,7 @@ header img {
 
 .mindanao_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+    transform: scale(1.02);
 }
 
 .mindanao_card img {
@@ -432,6 +435,13 @@ header img {
 .virtual_tour_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
     cursor: pointer;
+    transform: scale(1.05);
+    background-color: rgb(231, 231, 231);
+    color: #232323;
+}
+
+.virtual_tour_card:hover p {
+    color: rgb(24, 24, 24);
 }
 
 .virtual_tour_card img {
@@ -520,6 +530,7 @@ header img {
 
 .games_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
+    scale: 1.05;
 }
 
 .games_card img {
