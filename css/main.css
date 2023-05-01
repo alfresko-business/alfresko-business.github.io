@@ -642,10 +642,16 @@ header img {
     margin-bottom: auto;
 }
 
+.shop_product_right_container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 50px;
+}
+
 .shop_product_card_container {
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
     gap: 20px;
 }
 
@@ -721,8 +727,28 @@ header img {
     color: black;
 }
 
+.shop_button_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.shop_button_wrapper > button {
+    background-color: rgb(31, 31, 31);
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all .2s ease-out;
+}
+
+.shop_button_wrapper > button:hover {
+    background-color: rgb(231, 231, 231);
+    color: rgb(0, 0, 0);
+}
+
 .shop_modal {
-    display: hidden;
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0px;
@@ -923,7 +949,6 @@ header img {
     color: white;
     cursor: pointer;
 }
-
 
 footer {
     background-color: rgb(18, 18, 18);

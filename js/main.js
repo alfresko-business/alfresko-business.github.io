@@ -1,25 +1,3 @@
-// JavaScript //
-// Function for image carousel (aka image slideshow). This will be added soon
-// let slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   let i;
-//   let slides = document.getElementsByClassName("slides");
-
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}    
-  
-//   slides[slideIndex-1].style.display = "block";  
-//   setTimeout(showSlides, 5000);
-// }
-
-
-// For fast and smooth scrolling to specific content of pages
 var scroll_to_tourist_destination_section_button = document.getElementById("scroll_to_tourist_destination_section_button");
 scroll_to_tourist_destination_section_button.onclick = function() {
     document.getElementById('tourist_destination_section').scrollIntoView();
@@ -72,3 +50,19 @@ var mindanao_card_button = document.getElementById("mindanao_card_button");
 mindanao_card_button.onclick = function() {
     window.location.href = "mindanao_tourist_spots.html"
 }
+
+
+// Checkout window
+var order_now_button = document.getElementById("order_now_button");
+var shop_modal = document.getElementById("shop_modal");
+
+order_now_button.onclick = function() {
+    shop_modal.style.display = "block";
+}
+
+shop_modal.addEventListener("click", (event) => {
+    if (event.target === shop_modal) {
+      // Close the modal window
+      shop_modal.style.display = "none";
+    }
+  });
