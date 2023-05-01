@@ -690,16 +690,6 @@ header img {
     object-fit: cover;
 }
 
-.shop_product_card button {
-    padding: 10px 20px;
-    color: white;
-    background: none;
-    font-size: .7em;
-    margin-top: auto;
-    transition: .2s ease-out;
-    align-self: center;
-}
-
 .shop_product_card_content_wrappper {
     width: 50%;
     padding: 25px;
@@ -712,6 +702,12 @@ header img {
 }
 
 .shop_product_card_button_wrappper button {
+    padding: 10px;
+    color: white;
+    background: none;
+    font-size: .7em;
+    margin-top: auto;
+    transition: .2s ease-out;
     cursor: pointer;
     color: rgb(255, 255, 255);
     border-style: solid;
