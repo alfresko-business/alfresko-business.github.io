@@ -88,6 +88,85 @@ header img {
     
 }
 
+.luzon_quick_overview_container {
+    position: relative;
+    display: flex;
+    font-size: 24px;
+    padding: 80px 140px;
+    gap: 40px;
+    background-image: url(../resources/images/banaue_rice_terraces-ar_on_unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.luzon_quick_overview_container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the opacity to adjust the darkness of the overlay */
+    z-index: 1;
+}
+
+.luzon_quick_overview_container * {
+    position: relative;
+    z-index: 2;
+    color: #fff; /* Change the text color to make it visible on the dark overlay */
+}
+
+.luzon_quick_overview_image_wrapper {
+    display: flex;
+    width: calc(33% - 20px);
+    height: auto;
+}
+
+.luzon_quick_overview_left_container {
+    width: calc(30% - 20px);
+}
+
+.luzon_quick_overview_left_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.luzon_quick_overview_right_container {
+    width: calc(70% - 20px);
+}
+
+.luzon_quick_overview_right_container h1 {
+    margin-bottom: 30px;
+}
+
+.luzon_quick_overview_right_container h2 {
+    font-size: 32px;
+}
+
+.luzon_quick_overview_right_container p {
+    color: rgb(231, 231, 231);
+}
+
+.luzon_quick_overview_heading_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.luzon_details_facts_container {
+    display: flex;
+}
+
+.luzon_quick_details_container {
+    width: calc(50% - 20px);
+}
+
+.luzon_quick_facts_container {
+    width: calc(50% - 20px);
+}
+
 .main_content {
     font-size: 24px;
     background-color: rgb(255, 255, 255);
