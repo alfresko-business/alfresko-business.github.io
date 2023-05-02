@@ -55,14 +55,24 @@ mindanao_card_button.onclick = function() {
 // Checkout window
 var order_now_button = document.getElementById("order_now_button");
 var shop_modal = document.getElementById("shop_modal");
+var body = document.querySelector("body");
 
 order_now_button.onclick = function() {
     shop_modal.style.display = "block";
+    setTimeout(function() {
+        shop_modal.classList.add("open");
+    }, 50);
+    body.style.overflow = "hidden";
 }
 
 shop_modal.addEventListener("click", (event) => {
     if (event.target === shop_modal) {
-      // Close the modal window
-      shop_modal.style.display = "none";
+        shop_modal.classList.remove("open");
+        shop_modal.classList.add("close");
+        setTimeout(function() {
+            shop_modal.style.display = "none";
+            shop_modal.classList.remove("close");
+            body.style.overflow = "auto";
+        }, 100);
     }
-  });
+});
