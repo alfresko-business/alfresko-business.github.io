@@ -24,7 +24,7 @@ home_button.onclick = function() {
 }
 
 shop_button.onclick = function() {
-    window.location.href = "shop.html";
+    window.location.href = "index.html#shop_section";
 }
 
 contact_button.onclick = function() {
