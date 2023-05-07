@@ -211,12 +211,13 @@ header img {
     text-align: center;
     height: 500px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
-    transition: .2s ease;
+    transition: transform .2s ease, flex .5s ease;
 }
 
 .luzon_card:hover, .visayas_card:hover, .mindanao_card:hover {
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
     transform: scale(1.02);
+    flex: 1;
 }
 
 .luzon_card img, .visayas_card img, .mindanao_card img{
