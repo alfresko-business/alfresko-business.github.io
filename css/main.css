@@ -649,7 +649,7 @@ header img {
 .shop_modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     left: 0px;
     top: 0px;
     width: 100vw;
