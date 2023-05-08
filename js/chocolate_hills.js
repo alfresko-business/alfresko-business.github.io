@@ -9,7 +9,7 @@ scroll_to_top_button.onclick = function() {
 var header_logo = document.getElementById("header_logo");
 var home_button = document.getElementById("home_button");
 var contact_button = document.getElementById("contact_button");
-var login_button = document.getElementById("login_button");
+var user_login_button = document.getElementById("user_login_button");
 var footer_logo = document.getElementById("footer_logo");
 
 header_logo.onclick = function() {
@@ -24,7 +24,7 @@ shop_button.onclick = function() {
     window.location.href = "index.html#shop_section";
 }
 
-login_button.onclick = function() {
+user_login_button.onclick = function() {
     window.location.href = "authentication.html";
 }
 
