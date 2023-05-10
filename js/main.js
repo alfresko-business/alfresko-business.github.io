@@ -10,7 +10,7 @@ scroll_to_tourist_destination_section_button.onclick = function() {
 
 var scroll_to_top_button = document.getElementById("scroll_to_top_button");
 scroll_to_top_button.onclick = function() {
-    document.getElementById('header').scrollIntoView();
+    document.getElementById('welcome_section').scrollIntoView();
 }
 
 var header_logo = document.getElementById("header_logo");

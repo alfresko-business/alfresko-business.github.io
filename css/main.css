@@ -102,6 +102,7 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-margin-top: var(--header-height);
 }
 
 .welcome_section_container {

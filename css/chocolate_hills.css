@@ -106,6 +106,7 @@ header img {
     font-size: 24px;
     gap: 80px;
     justify-content: center;
+    scroll-margin-top: var(--header-height);
 }
 
 .overview_image_wrapper {

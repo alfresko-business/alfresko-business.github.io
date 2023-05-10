@@ -106,6 +106,7 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-margin-top: var(--header-height);
 }
 
 .luzon_quick_overview_container::before {
