@@ -47,6 +47,7 @@ html {
 header {
     position: sticky;
     top: 0;
+    height: auto;
     width: 100%;
     display: flex;
     color: white;
@@ -168,6 +169,7 @@ header img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    scroll-margin-top: var(--header-height);
 }
 
 .tourist_destination_section > p {
@@ -535,6 +537,7 @@ header img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-margin-top: var(--header-height);
 }
 
 .shop_section h1 {

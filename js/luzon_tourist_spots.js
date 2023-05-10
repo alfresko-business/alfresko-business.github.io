@@ -28,3 +28,10 @@ user_login_button.onclick = function() {
 footer_logo.onclick = function() {
     window.location.href = "index.html";
 }
+
+// For cards to make it clickable and redirect it to their corresponding pages
+var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");
+
+cards_banaue_rice_terraces.onclick = function() {
+    window.location.href = "banaue_rice_terraces.html";
+}
