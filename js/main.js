@@ -85,7 +85,33 @@ shop_modal.addEventListener("click", (event) => {
 // Change background color of button when clicked
 const smscw_card_order_cupsize = document.querySelectorAll(".smscw_card_order_cupsize");
 smscw_card_order_cupsize.forEach(button => {
-  button.addEventListener("click", () => {
-    button.classList.add("smcw_card_order_details_container_button_clicked");
-  });
+    button.addEventListener("click", () => {
+        button.classList.add("smcw_card_order_details_container_button_clicked");
+    });
 });
+
+
+// Item counter
+// Get all the input number and checkbox elements
+const numbers = document.querySelectorAll('.smscw_card_order_chosenquantity');
+const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
+
+// Add event listeners to each input number and checkbox
+numbers.forEach(number => {
+    number.addEventListener('input', updateTotal);
+});
+
+checkboxes.forEach(checkbox => {
+    checkbox.addEventListener('click', updateTotal);
+});
+
+// Update the total value whenever an input number or checkbox is changed
+function updateTotal() {
+    let count = 0;
+    numbers.forEach((number, index) => {
+        if (checkboxes[index].checked) {
+            count += Number(number.value);
+        }
+    });
+    document.getElementById('smcw_ppc_totalchosenitems').textContent = count;
+}
