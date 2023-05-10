@@ -95,6 +95,8 @@ smscw_card_order_cupsize.forEach(button => {
 // Get all the input number and checkbox elements
 const numbers = document.querySelectorAll('.smscw_card_order_chosenquantity');
 const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
+const PRICE_PER_ITEM = 16;
+const TIME_PER_ITEM = 15;
 
 // Add event listeners to each input number and checkbox
 numbers.forEach(number => {
@@ -113,5 +115,8 @@ function updateTotal() {
             count += Number(number.value);
         }
     });
+    document.getElementById('smcw_ppc_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
+    document.getElementById('smcw_paytotal').textContent = count * PRICE_PER_ITEM;
     document.getElementById('smcw_ppc_totalchosenitems').textContent = count;
+    document.getElementById('smcw_ppc_preparationtime').textContent = "About " + count * TIME_PER_ITEM + " seconds";
 }
