@@ -118,5 +118,14 @@ function updateTotal() {
     document.getElementById('smcw_ppc_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
     document.getElementById('smcw_paytotal').textContent = count * PRICE_PER_ITEM;
     document.getElementById('smcw_ppc_totalchosenitems').textContent = count;
-    document.getElementById('smcw_ppc_preparationtime').textContent = "About " + count * TIME_PER_ITEM + " seconds";
+
+    var timeInSeconds = count * TIME_PER_ITEM; 
+    let minutes = Math.floor(timeInSeconds / 60);
+    let seconds = timeInSeconds % 60;
+    
+    if (timeInSeconds <= 59) {
+        document.getElementById('smcw_ppc_preparationtime').textContent = `About ${timeInSeconds}s`;
+    } else {
+        document.getElementById('smcw_ppc_preparationtime').textContent = `About ${minutes}m ${seconds}s`;
+  }
 }
