@@ -747,6 +747,10 @@ header img {
     gap: 5px;
 }
 
+.smcw_card_order_details_container p {
+    color: rgb(56, 56, 56);
+}
+
 .smcw_card_order_details_container input {
     padding: 5px;
     border: 1px solid rgb(201, 201, 201);
@@ -756,7 +760,7 @@ header img {
 
 .smcw_card_order_details_container button {
     padding: 5px;
-    background: none;
+    background: white;
     border: 1px solid rgb(201, 201, 201);
     border-radius: 5px;
     width: 50px;
@@ -768,6 +772,12 @@ header img {
     border: 1px solid rgb(56, 56, 56);
     color: white;
     cursor: pointer;
+}
+
+.smcw_card_order_details_container button.smcw_card_order_details_container_button_clicked {
+    background-color: rgb(56, 56, 56);
+    border: 1px solid rgb(56, 56, 56);
+    color: white;
 }
 
 .smcw_card_price_wrapper {

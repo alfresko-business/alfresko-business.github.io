@@ -80,3 +80,12 @@ shop_modal.addEventListener("click", (event) => {
         }, 100);
     }
 });
+
+
+// Change background color of button when clicked
+const smscw_card_order_cupsize = document.querySelectorAll(".smscw_card_order_cupsize");
+smscw_card_order_cupsize.forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.add("smcw_card_order_details_container_button_clicked");
+  });
+});
