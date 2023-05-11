@@ -693,6 +693,11 @@ header img {
     overflow: auto;
 }
 
+.shop_modal_checkout_window.close {
+    opacity: 0;
+    transition: all .2s ease;
+}
+
 .smcw_pick_your_order_container {
     display: flex;
     flex-direction: column;
@@ -875,6 +880,89 @@ header img {
     color: white;
     cursor: pointer;
 }
+
+.shop_modal_purchased_order_window {
+    display: none;
+    text-align: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #fefefe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 80px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    height: 70%;
+    width: 80vw;
+    max-height: 95vh;
+    overflow: auto;
+    opacity: 0;
+}
+
+.shop_modal_purchased_order_window.open {
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.smpow_order_confirmed_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.smpow_order_confirmed_container img {
+    width: 50%;
+}
+
+.smpow_order_details_container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.smpow_order_details_container > div {
+    border: 2px solid rgb(231, 231, 231);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.smpow_odc_order_wrapper {
+    flex: 0 0 100%;
+}
+
+.smpow_odc_order_wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.smpow_odc_payment_method_wrapper {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.smpow_odc_subtotal_wrapper {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.smpow_odc_reference_code_wrapper {
+    flex: 1 0 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
 
 footer {
     background-color: rgb(18, 18, 18);
