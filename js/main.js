@@ -100,7 +100,7 @@ smscw_card_order_cupsize.forEach(button => {
 // Get all the input number and checkbox elements
 const numbers = document.querySelectorAll('.smscw_card_order_chosenquantity');
 const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
-const PRICE_PER_ITEM = 16;
+const PRICE_PER_ITEM = 15;
 const TIME_PER_ITEM = 15;
 
 // Add event listeners to each input number and checkbox
