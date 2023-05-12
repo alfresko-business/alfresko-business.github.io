@@ -223,17 +223,32 @@ paymentMethod.forEach(radio => {
     });
 });
 
+calculateSubtotal();
+
 // Generate subtotal
 function calculateSubtotal() {
-    let count = 0;
-    quantity.forEach((number, index) => {
-        if (checkboxes[index].checked) {
-            count += Number(number.value);
-        }
+    const quantity = document.querySelectorAll('.smscw_card_order_chosenquantity');
+    const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
+    const PRICE_PER_ITEM = 15;
+
+    quantity.forEach(number => {
+        number.addEventListener('input', updateTotal);
     });
-    document.getElementById('smpow_odc_ow_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', updateTotal);
+    });
+
+    function updateTotal() {
+        let count = 0;
+        quantity.forEach((number, index) => {
+            if (checkboxes[index].checked) {
+                count += Number(number.value);
+            }
+        });
+        document.getElementById('smpow_odc_ow_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
+    }
 }
-calculateSubtotal();
 
 // Generate order receipt code based on date and time
 function generateOrderReceiptCode() {
