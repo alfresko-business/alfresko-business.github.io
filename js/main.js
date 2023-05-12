@@ -164,18 +164,6 @@ function toggleCardBackgroundColor() {
     });
 }
 
-selectRadioOnDivClick();
-function selectRadioOnDivClick() {
-    const parentDivs = document.querySelectorAll('.smcw_pc_card');
-
-    parentDivs.forEach((parentDiv) => {
-        parentDiv.addEventListener('click', () => {
-            const radioButton = parentDiv.querySelector('input[type="radio"]');
-            radioButton.checked = true;
-        });
-    });
-}
-
 // Order confirmation window
 initializeOrderConfirmationWindow();
 function initializeOrderConfirmationWindow() {
