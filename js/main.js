@@ -137,6 +137,33 @@ function displayOrderDetails() {
     }
 }
 
+toggleCardBackgroundColor();
+function toggleCardBackgroundColor() {
+    const cards = document.querySelectorAll('.smcw_card');
+
+    const originalBgColors = [];
+    cards.forEach(card => {
+        originalBgColors.push(getComputedStyle(card).backgroundColor);
+        const checkbox = card.querySelector('.smcw_card_checkbox');
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
+                card.style.backgroundColor = 'rgb(240, 240, 240)';
+            } else {
+                card.style.backgroundColor = '';
+            }
+        });
+    });
+
+    var shop_modal = document.getElementById("shop_modal");
+    shop_modal.addEventListener("click", (event) => {
+        if (event.target === shop_modal) {
+            cards.forEach((card, index) => {
+                card.style.backgroundColor = originalBgColors[index];
+            });
+        }
+    });
+}
+
 selectRadioOnDivClick();
 function selectRadioOnDivClick() {
     const parentDivs = document.querySelectorAll('.smcw_pc_card');
