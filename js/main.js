@@ -60,7 +60,6 @@ mindanao_card_button.onclick = function() {
     window.location.href = "mindanao_tourist_spots.html"
 }
 
-
 // Checkout window
 var shop_modal_checkout_window = document.getElementById("shop_modal_checkout_window");
 var order_now_button = document.getElementById("order_now_button");
@@ -267,4 +266,62 @@ function resetContent() {
     subtotal.textContent = originalContent;
     itemQuantity.textContent = originalContent;
     preparationTime.textContent = originalContent;
+}
+
+orderButtonEnabler();
+
+function orderButtonEnabler() {
+    const checkboxList = document.querySelectorAll('.smcw_card_checkbox');
+    const numberList = document.querySelectorAll('.smscw_card_order_chosenquantity');
+    const radioList = document.querySelectorAll('.radio');
+    const submitButton = document.querySelector('#smcw_ppc_pay_now_button');
+
+    function checkValidity() {
+        let checkboxChecked = false;
+        let totalValue = 0;
+        let radioSelected = false;
+
+        // Check if at least one checkbox is checked
+        for (let i = 0; i < checkboxList.length; i++) {
+            if (checkboxList[i].checked) {
+                checkboxChecked = true;
+                break;
+            }
+        }
+
+        // Check if total value is at least 1
+        for (let i = 0; i < numberList.length; i++) {
+            totalValue += Number(numberList[i].value);
+        }
+
+        // Check if at least one radio button is selected
+        for (let i = 0; i < radioList.length; i++) {
+            if (radioList[i].checked) {
+                radioSelected = true;
+                break;
+            }
+        }
+
+        // Enable the submit button if all conditions are met
+        if (checkboxChecked && totalValue >= 1 && radioSelected) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    }
+
+    // Check validity on checkbox click, number input, and radio button click
+    for (let i = 0; i < checkboxList.length; i++) {
+        checkboxList[i].addEventListener('click', checkValidity);
+    }
+
+    for (let i = 0; i < numberList.length; i++) {
+        numberList[i].addEventListener('input', checkValidity);
+    }
+
+    for (let i = 0; i < radioList.length; i++) {
+        radioList[i].addEventListener('click', checkValidity);
+    }
+
+    checkValidity();
 }

@@ -316,7 +316,7 @@
                         <div class="smcw_pc_card_container">
                             <div class="smcw_pc_card">
                                 <div class="smcw_pc_card_radio_wrapper">
-                                    <input type="radio" name="payment_method" value="Physical Cash">
+                                    <input type="radio" class="radio" name="payment_method" value="Physical Cash">
                                 </div>
                                 <div class="smcw_pc_card_logo_wrapper">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M540 636q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM220 776q-24.75 0-42.375-17.625T160 716V316q0-24.75 17.625-42.375T220 256h640q24.75 0 42.375 17.625T920 316v400q0 24.75-17.625 42.375T860 776H220Zm100-60h440q0-42 29-71t71-29V416q-42 0-71-29t-29-71H320q0 42-29 71t-71 29v200q42 0 71 29t29 71Zm480 180H100q-24.75 0-42.375-17.625T40 836V376h60v460h700v60ZM220 716V316v400Z"/></svg>
@@ -327,7 +327,7 @@
                             </div>
                             <div class="smcw_pc_card">
                                 <div class="smcw_pc_card_radio_wrapper">
-                                    <input type="radio" name="payment_method" value="Credit/Debit Card">
+                                    <input type="radio" class="radio" name="payment_method" value="Credit/Debit Card">
                                 </div>
                                 <div class="smcw_pc_card_logo_wrapper">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M880 316v520q0 24-18 42t-42 18H140q-24 0-42-18t-18-42V316q0-24 18-42t42-18h680q24 0 42 18t18 42ZM140 425h680V316H140v109Zm0 129v282h680V554H140Zm0 282V316v520Z"/></svg>
@@ -338,7 +338,7 @@
                             </div>
                             <div class="smcw_pc_card">
                                 <div class="smcw_pc_card_radio_wrapper">
-                                    <input type="radio" name="payment_method" value="GCash">
+                                    <input type="radio" class="radio" name="payment_method" value="GCash">
                                 </div>
                                 <div class="smcw_pc_card_logo_wrapper">
                                     <img src="resources/images/gcash.jpg">
@@ -349,7 +349,7 @@
                             </div>
                             <div class="smcw_pc_card">
                                 <div class="smcw_pc_card_radio_wrapper">
-                                    <input type="radio" name="payment_method" value="Maya">
+                                    <input type="radio" class="radio" name="payment_method" value="Maya">
                                 </div>
                                 <div class="smcw_pc_card_logo_wrapper">
                                     <svg width="148" height="43" viewBox="0 0 148 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -372,7 +372,7 @@
                             </div>
                             <div class="smcw_pc_card">
                                 <div class="smcw_pc_card_radio_wrapper">
-                                    <input type="radio" name="payment_method" value="Payment Center">
+                                    <input type="radio" class="radio" name="payment_method" value="Payment Center">
                                 </div>
                                 <div class="smcw_pc_card_logo_wrapper">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M840 537v339q0 24-18 42t-42 18H179q-24 0-42-18t-18-42V537q-28-24-37-59t2-70l43-135q8-27 28-42t46-15h553q28 0 49 15.5t29 41.5l44 135q11 35 1.5 70T840 537Zm-270-31q29 0 49-19t16-46l-25-165H510v165q0 26 17 45.5t43 19.5Zm-187 0q28 0 47.5-19t19.5-46V276H350l-25 165q-4 26 14 45.5t44 19.5Zm-182 0q24 0 41.5-16.5T263 449l26-173H189l-46 146q-10 31 8 57.5t50 26.5Zm557 0q32 0 50.5-26t8.5-58l-46-146H671l26 173q3 24 20.5 40.5T758 506ZM179 876h601V565q1 1-6.5 1H758q-25 0-47.5-10.5T666 523q-16 20-40 31.5T573 566q-30 0-51.5-8.5T480 529q-15 18-38 27.5t-52 9.5q-31 0-55-11t-41-32q-24 21-47 32t-46 11h-13.5q-6.5 0-8.5-1v311Zm601 0H179h601Z"/></svg>
@@ -386,7 +386,7 @@
 
                         </div>
                     </div>
-                    <button id="smcw_ppc_pay_now_button">Pay ₱<span id="smcw_paytotal">...</span></button>
+                    <button id="smcw_ppc_pay_now_button" disabled>Pay ₱<span id="smcw_paytotal">...</span></button>
                 </div>
             </div>
             <div class="shop_modal_purchased_order_window" id="shop_modal_purchased_order_window">
