@@ -139,10 +139,10 @@ function displayOrderDetails() {
 
 toggleCardBackgroundColor();
 function toggleCardBackgroundColor() {
-    const cards = document.querySelectorAll('.smcw_card');
+    const productCards = document.querySelectorAll('.smcw_card');
 
     const originalBgColors = [];
-    cards.forEach(card => {
+    productCards.forEach(card => {
         originalBgColors.push(getComputedStyle(card).backgroundColor);
         const checkbox = card.querySelector('.smcw_card_checkbox');
         checkbox.addEventListener('change', function () {
@@ -157,10 +157,29 @@ function toggleCardBackgroundColor() {
     var shop_modal = document.getElementById("shop_modal");
     shop_modal.addEventListener("click", (event) => {
         if (event.target === shop_modal) {
-            cards.forEach((card, index) => {
+            productCards.forEach((card, index) => {
                 card.style.backgroundColor = originalBgColors[index];
             });
+            
+            paymentOptionCards.forEach(card => {
+                card.classList.remove('selected');
+            });
         }
+    });
+
+    const paymentOptionCards = document.querySelectorAll('.smcw_pc_card');
+    const radios = document.querySelectorAll('.radio');
+    radios.forEach(radio => {
+        radio.addEventListener('click', function () {
+            // Remove the 'selected' class from all smcw_pc_card elements
+            paymentOptionCards.forEach(card => {
+                card.classList.remove('selected');
+            });
+
+            // Add the 'selected' class to the parent smcw_pc_card element of the clicked radio button
+            const card = this.closest('.smcw_pc_card');
+            card.classList.add('selected');
+        });
     });
 }
 

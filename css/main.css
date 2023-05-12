@@ -722,6 +722,10 @@ header img {
     transition: all .2s ease;
 }
 
+.smcw_pc_card.selected {
+    background-color: rgb(240, 240, 240);
+}
+
 .smcw_card:hover {
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.2);
 }
