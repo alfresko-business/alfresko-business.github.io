@@ -87,6 +87,8 @@ shop_modal.addEventListener("click", (event) => {
             shop_modal_purchased_order_window.style.display = "none";
             shop_modal_purchased_order_window.classList.remove("close");
             body.style.overflow = "auto";
+            inputReset();
+            resetContent();
         }, 100);
     }
 });
@@ -147,11 +149,19 @@ smcw_ppc_pay_now_button.onclick = function() {
     setTimeout(function() {
         shop_modal_checkout_window.style.display = "none";
     }, 500);
+
     shop_modal_purchased_order_window.style.display = "flex";
+
     setTimeout(function() {
         shop_modal_purchased_order_window.classList.add("open");
     }, 500);
+
     body.style.overflow = "hidden";
+
+    setTimeout(function() {
+        inputReset();
+        resetContent();
+    }, 500);
 }
 
 // Printing order details
@@ -236,3 +246,25 @@ const seconds = ('0' + currentDate.getSeconds()).slice(-2);
 const referenceCode = `${year}${month}${day}_${hours}${minutes}${seconds}`;
 
 document.getElementById('smpow_odc_ow_order_receipt_code').textContent = referenceCode;
+
+// Reset user input from checkboxes, radio buttons, and other related stuff
+function inputReset() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    const numberInputs = document.querySelectorAll('input[type="number"]');
+
+    checkboxes.forEach(checkbox => checkbox.checked = false);
+    radioButtons.forEach(radioButton => radioButton.checked = false);
+    numberInputs.forEach(numberInput => numberInput.value = 0);
+}
+
+function resetContent() {
+    const originalContent = "...";
+    const subtotal = document.getElementById('smcw_ppc_subtotal');
+    const itemQuantity = document.getElementById('smcw_ppc_totalchosenitems');
+    const preparationTime = document.getElementById('smcw_ppc_preparationtime');
+
+    subtotal.textContent = originalContent;
+    itemQuantity.textContent = originalContent;
+    preparationTime.textContent = originalContent;
+}
