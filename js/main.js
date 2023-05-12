@@ -144,6 +144,7 @@ function updateTotal() {
 // Order confirmation window
 var smcw_ppc_pay_now_button = document.getElementById("smcw_ppc_pay_now_button");
 smcw_ppc_pay_now_button.onclick = function() {
+    generateOrderReceiptCode();
     shop_modal_checkout_window.classList.add("close");
     setTimeout(function() {
         shop_modal_checkout_window.style.display = "none";
@@ -234,17 +235,19 @@ function calculateSubtotal() {
 }
 calculateSubtotal();
 
-// Generate reference code based on date
-const currentDate = new Date();
-const year = currentDate.getFullYear();
-const month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
-const day = ('0' + currentDate.getDate()).slice(-2);
-const hours = ('0' + currentDate.getHours()).slice(-2);
-const minutes = ('0' + currentDate.getMinutes()).slice(-2);
-const seconds = ('0' + currentDate.getSeconds()).slice(-2);
-const referenceCode = `${year}${month}${day}_${hours}${minutes}${seconds}`;
+// Generate order receipt code based on date and time
+function generateOrderReceiptCode() {
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+    const day = ('0' + currentDate.getDate()).slice(-2);
+    const hours = ('0' + currentDate.getHours()).slice(-2);
+    const minutes = ('0' + currentDate.getMinutes()).slice(-2);
+    const seconds = ('0' + currentDate.getSeconds()).slice(-2);
+    const orderReceiptCode = `${year}${month}${day}_${hours}${minutes}${seconds}`;
 
-document.getElementById('smpow_odc_ow_order_receipt_code').textContent = referenceCode;
+    document.getElementById('smpow_odc_ow_order_receipt_code').textContent = orderReceiptCode;
+}
 
 // Reset user input from checkboxes, radio buttons, and other related stuff
 function inputReset() {
