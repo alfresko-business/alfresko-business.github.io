@@ -951,7 +951,7 @@ header img {
     justify-content: space-between;
 }
 
-.smpow_odc_subtotal_wrapper {
+.smpow_odc_total_wrapper {
     flex: 1 0 30%;
     display: flex;
     flex-direction: column;

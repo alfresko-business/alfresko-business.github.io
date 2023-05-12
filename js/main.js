@@ -296,7 +296,7 @@ function calculateSubtotal() {
                 count += Number(number.value);
             }
         });
-        document.getElementById('smpow_odc_ow_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
+        document.getElementById('smpow_odc_ow_total').textContent = "₱" + count * PRICE_PER_ITEM;
     }
 }
 
