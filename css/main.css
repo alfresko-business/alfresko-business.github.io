@@ -883,14 +883,11 @@ header img {
 .shop_modal_purchased_order_window {
     display: none;
     text-align: center;
-    justify-content: space-between;
-    gap: 40px;
     background-color: #fefefe;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 50px 80px;
     border: 1px solid #888;
     border-radius: 10px;
     width: 60vw;
@@ -910,6 +907,8 @@ header img {
     width: 40%;
     align-items: center;
     justify-content: center;
+    background-color: rgb(247, 247, 247);
+    padding: 50px 80px;
 }
 
 .smpow_order_confirmed_container img {
@@ -922,6 +921,7 @@ header img {
     flex-wrap: wrap;
     width: 60%;
     justify-content: center;
+    padding: 50px;
 }
 
 .smpow_order_details_container > div {
