@@ -89,7 +89,7 @@ function initializeCheckoutWindow() {
                 shop_modal_purchased_order_window.classList.remove("close");
                 body.style.overflow = "auto";
                 inputReset();
-                resetContent();
+                contentReset();
                 orderButtonDisabler();
             }, 100);
         }
@@ -172,7 +172,7 @@ function initializeOrderConfirmationWindow() {
     
         setTimeout(function() {
             inputReset();
-            resetContent();
+            contentReset();
             orderButtonDisabler();
         }, 500);
     }   
@@ -291,7 +291,7 @@ function inputReset() {
     numberInputs.forEach(numberInput => numberInput.value = 0);
 }
 
-function resetContent() {
+function contentReset() {
     const originalContent = "...";
     const subtotal = document.getElementById('smcw_ppc_subtotal');
     const itemQuantity = document.getElementById('smcw_ppc_totalchosenitems');
