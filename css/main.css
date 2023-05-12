@@ -894,9 +894,7 @@ header img {
     padding: 50px 80px;
     border: 1px solid #888;
     border-radius: 10px;
-    height: 70%;
-    width: 80vw;
-    max-height: 95vh;
+    width: 60vw;
     overflow: auto;
     opacity: 0;
 }
@@ -910,20 +908,21 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 50%;
+    width: 40%;
     align-items: center;
     justify-content: center;
 }
 
 .smpow_order_confirmed_container img {
-    width: 50%;
+    width: 200px;
 }
 
 .smpow_order_details_container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
+    justify-content: center;
 }
 
 .smpow_order_details_container > div {
@@ -945,21 +944,24 @@ header img {
     flex: 1 0 30%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 .smpow_odc_subtotal_wrapper {
     flex: 1 0 30%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
-.smpow_odc_reference_code_wrapper {
+.smpow_odc_order_receipt_code_wrapper {
     flex: 1 0 30%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 10px;
+    justify-content: space-between;
 }
 
 

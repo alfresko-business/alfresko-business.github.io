@@ -235,4 +235,4 @@ const minutes = ('0' + currentDate.getMinutes()).slice(-2);
 const seconds = ('0' + currentDate.getSeconds()).slice(-2);
 const referenceCode = `${year}${month}${day}_${hours}${minutes}${seconds}`;
 
-document.getElementById('smpow_odc_ow_reference_code').textContent = referenceCode;
+document.getElementById('smpow_odc_ow_order_receipt_code').textContent = referenceCode;
