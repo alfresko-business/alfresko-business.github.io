@@ -769,24 +769,12 @@ header img {
 
 .smcw_card_order_details_container button {
     padding: 5px;
-    background: white;
-    border: 1px solid rgb(201, 201, 201);
+    color: white;
+    background-color: rgb(56, 56, 56);
+    border: 1px solid rgb(56, 56, 56);
     border-radius: 5px;
     width: 50px;
     transition: all .2s ease;
-}
-
-.smcw_card_order_details_container button:hover {
-    background-color: rgb(56, 56, 56);
-    border: 1px solid rgb(56, 56, 56);
-    color: white;
-    cursor: pointer;
-}
-
-.smcw_card_order_details_container button.smcw_card_order_details_container_button_clicked {
-    background-color: rgb(56, 56, 56);
-    border: 1px solid rgb(56, 56, 56);
-    color: white;
 }
 
 .smcw_card_price_wrapper {

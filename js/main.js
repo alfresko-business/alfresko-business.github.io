@@ -61,111 +61,113 @@ mindanao_card_button.onclick = function() {
 }
 
 // Checkout window
-var shop_modal_checkout_window = document.getElementById("shop_modal_checkout_window");
-var order_now_button = document.getElementById("order_now_button");
-var shop_modal = document.getElementById("shop_modal");
-var body = document.querySelector("body");
-
-order_now_button.onclick = function() {
-    shop_modal.style.display = "block";
-    setTimeout(function() {
-        shop_modal.classList.add("open");
-    }, 50);
-    body.style.overflow = "hidden";
-}
-
-shop_modal.addEventListener("click", (event) => {
-    if (event.target === shop_modal) {
-        shop_modal.classList.remove("open");
-        shop_modal.classList.add("close");
+initializeCheckoutWindow();
+function initializeCheckoutWindow() {
+    var shop_modal_checkout_window = document.getElementById("shop_modal_checkout_window");
+    var order_now_button = document.getElementById("order_now_button");
+    var shop_modal = document.getElementById("shop_modal");
+    var body = document.querySelector("body");
+    
+    order_now_button.onclick = function() {
+        shop_modal.style.display = "block";
         setTimeout(function() {
-            shop_modal.style.display = "none";
-            shop_modal.classList.remove("close");
-            shop_modal_checkout_window.classList.remove("close");
-            shop_modal_checkout_window.style.display = "flex";
-            shop_modal_purchased_order_window.style.display = "none";
-            shop_modal_purchased_order_window.classList.remove("close");
-            body.style.overflow = "auto";
-            inputReset();
-            resetContent();
-        }, 100);
+            shop_modal.classList.add("open");
+        }, 50);
+        body.style.overflow = "hidden";
     }
-});
-
-
-// Change background color of button when clicked
-const smscw_card_order_cupsize = document.querySelectorAll(".smscw_card_order_cupsize");
-smscw_card_order_cupsize.forEach(button => {
-    button.addEventListener("click", () => {
-        button.classList.add("smcw_card_order_details_container_button_clicked");
-    });
-});
-
-
-// Item counter
-// Get all the input number and checkbox elements
-const quantity = document.querySelectorAll('.smscw_card_order_chosenquantity');
-const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
-const PRICE_PER_ITEM = 15;
-const TIME_PER_ITEM = 15;
-
-// Add event listeners to each input number and checkbox
-quantity.forEach(number => {
-    number.addEventListener('input', updateTotal);
-});
-
-checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('click', updateTotal);
-});
-
-// Update the total value whenever an input number or checkbox is changed
-function updateTotal() {
-    let count = 0;
-    quantity.forEach((number, index) => {
-        if (checkboxes[index].checked) {
-            count += Number(number.value);
+    
+    shop_modal.addEventListener("click", (event) => {
+        if (event.target === shop_modal) {
+            shop_modal.classList.remove("open");
+            shop_modal.classList.add("close");
+            setTimeout(function() {
+                shop_modal.style.display = "none";
+                shop_modal.classList.remove("close");
+                shop_modal_checkout_window.classList.remove("close");
+                shop_modal_checkout_window.style.display = "flex";
+                shop_modal_purchased_order_window.style.display = "none";
+                shop_modal_purchased_order_window.classList.remove("close");
+                body.style.overflow = "auto";
+                inputReset();
+                resetContent();
+                orderButtonDisabler();
+            }, 100);
         }
     });
-    document.getElementById('smcw_ppc_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
-    document.getElementById('smcw_paytotal').textContent = count * PRICE_PER_ITEM;
-    document.getElementById('smcw_ppc_totalchosenitems').textContent = count;
+}
 
-    var timeInSeconds = count * TIME_PER_ITEM; 
-    let minutes = Math.floor(timeInSeconds / 60);
-    let seconds = timeInSeconds % 60;
-    
-    if (timeInSeconds <= 59) {
-        document.getElementById('smcw_ppc_preparationtime').textContent = `About ${timeInSeconds}s`;
-    } else {
-        document.getElementById('smcw_ppc_preparationtime').textContent = `About ${minutes}m ${seconds}s`;
-  }
+// Subtotal, item, and preparation time counter
+displayOrderDetails();
+function displayOrderDetails() {
+    // Get all the input number and checkbox elements
+    const quantity = document.querySelectorAll('.smscw_card_order_chosenquantity');
+    const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
+    const PRICE_PER_ITEM = 15;
+    const TIME_PER_ITEM = 15;
+
+    // Add event listeners to each input number and checkbox
+    quantity.forEach(number => {
+        number.addEventListener('input', updateTotal);
+    });
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', updateTotal);
+    });
+
+    // Update the total value whenever an input number or checkbox is changed
+    function updateTotal() {
+        let count = 0;
+        quantity.forEach((number, index) => {
+            if (checkboxes[index].checked) {
+                count += Number(number.value);
+            }
+        });
+        document.getElementById('smcw_ppc_subtotal').textContent = "₱" + count * PRICE_PER_ITEM;
+        document.getElementById('smcw_ppc_totalchosenitems').textContent = count;
+
+        var timeInSeconds = count * TIME_PER_ITEM;
+        let minutes = Math.floor(timeInSeconds / 60);
+        let seconds = timeInSeconds % 60;
+
+        if (timeInSeconds <= 59) {
+            document.getElementById('smcw_ppc_preparationtime').textContent = `About ${timeInSeconds}s`;
+        } else {
+            document.getElementById('smcw_ppc_preparationtime').textContent = `About ${minutes}m ${seconds}s`;
+        }
+    }
 }
 
 // Order confirmation window
-var smcw_ppc_pay_now_button = document.getElementById("smcw_ppc_pay_now_button");
-smcw_ppc_pay_now_button.onclick = function() {
-    generateOrderReceiptCode();
-    shop_modal_checkout_window.classList.add("close");
-    setTimeout(function() {
-        shop_modal_checkout_window.style.display = "none";
-    }, 500);
-
-    shop_modal_purchased_order_window.style.display = "flex";
-
-    setTimeout(function() {
-        shop_modal_purchased_order_window.classList.add("open");
-    }, 500);
-
-    body.style.overflow = "hidden";
-
-    setTimeout(function() {
-        inputReset();
-        resetContent();
-    }, 500);
+initializeOrderConfirmationWindow();
+function initializeOrderConfirmationWindow() {
+    var smcw_ppc_pay_now_button = document.getElementById("smcw_ppc_pay_now_button");
+    var body = document.querySelector("body");
+    
+    smcw_ppc_pay_now_button.onclick = function() {
+        generateOrderReceiptCode();
+        shop_modal_checkout_window.classList.add("close");
+        setTimeout(function() {
+            shop_modal_checkout_window.style.display = "none";
+        }, 500);
+    
+        shop_modal_purchased_order_window.style.display = "flex";
+    
+        setTimeout(function() {
+            shop_modal_purchased_order_window.classList.add("open");
+        }, 500);
+    
+        body.style.overflow = "hidden";
+    
+        setTimeout(function() {
+            inputReset();
+            resetContent();
+            orderButtonDisabler();
+        }, 500);
+    }   
 }
 
-// Printing order details
-const orderCheckboxes = document.querySelectorAll('.smcw_card_checkbox');
+// Display order details in the preview section in real-time
+const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
 const quantityInputs = document.querySelectorAll('.smscw_card_order_chosenquantity');
 const orderDetails = document.querySelectorAll('.smpow_odc_ow_order_details');
 
@@ -192,40 +194,42 @@ quantityInputs.forEach((input, index) => {
 });
 
 // Display text based on chosen payment method
-const paymentMethod = document.querySelectorAll('input[type="radio"][name="payment_method"]');
-const chosenPaymentMethod = document.getElementById('smpow_odc_ow_payment_method');
+paymentMethodEventListener();
+function paymentMethodEventListener() {
+    const paymentMethod = document.querySelectorAll('input[type="radio"][name="payment_method"]');
+    const chosenPaymentMethod = document.getElementById('smpow_odc_ow_payment_method');
 
-paymentMethod.forEach(radio => {
-    radio.addEventListener('change', () => {
-        const payment_method = radio.value;
-        let text;
-        switch (payment_method) {
-            case 'Physical Cash':
-                text = 'Physical Cash';
-                break;
-            case 'Credit/Debit Card':
-                text = 'Credit/Debit Card';
-                break;
-            case 'GCash':
-                text = 'GCash';
-                break;
-            case 'Maya':
-                text = 'Maya';
-                break;
-            case 'Payment Center':
-                text = 'Payment Center';
-                break;
-            default:
-                text = '';
-                break;
-        }
-        chosenPaymentMethod.textContent = text;
-    });
-});
-
-calculateSubtotal();
+    paymentMethod.forEach(radio => {
+        radio.addEventListener('change', () => {
+            const payment_method = radio.value;
+            let text;
+            switch (payment_method) {
+                case 'Physical Cash':
+                    text = 'Physical Cash';
+                    break;
+                case 'Credit/Debit Card':
+                    text = 'Credit/Debit Card';
+                    break;
+                case 'GCash':
+                    text = 'GCash';
+                    break;
+                case 'Maya':
+                    text = 'Maya';
+                    break;
+                case 'Payment Center':
+                    text = 'Payment Center';
+                    break;
+                default:
+                    text = '';
+                    break;
+            }
+            chosenPaymentMethod.textContent = text;
+        });
+    }); 
+}
 
 // Generate subtotal
+calculateSubtotal();
 function calculateSubtotal() {
     const quantity = document.querySelectorAll('.smscw_card_order_chosenquantity');
     const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
@@ -287,7 +291,6 @@ function resetContent() {
 }
 
 orderButtonEnabler();
-
 function orderButtonEnabler() {
     const checkboxList = document.querySelectorAll('.smcw_card_checkbox');
     const numberList = document.querySelectorAll('.smscw_card_order_chosenquantity');
@@ -342,4 +345,10 @@ function orderButtonEnabler() {
     }
 
     checkValidity();
+}
+
+function orderButtonDisabler() {
+    const submitButton = document.querySelector('#smcw_ppc_pay_now_button');
+
+    submitButton.disabled = true;
 }
