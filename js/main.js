@@ -398,3 +398,9 @@ function orderButtonDisabler() {
 
     submitButton.disabled = true;
 }
+
+window.onbeforeunload = function() {
+    inputReset();
+    contentReset();
+    orderButtonDisabler();
+  };
