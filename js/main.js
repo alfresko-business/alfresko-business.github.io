@@ -204,7 +204,7 @@ function updateCheckboxesAndQuantitiesState() {
     const strawberryAvailableQuantity = document.getElementById("strawberry_availablequantity");
     const strawberryChosenQuantity = document.getElementById("strawberry_chosenquantity");
     const strawberryCheckbox = document.querySelector("input[drink_name='Strawberry Jelly Drink']");
-    const smcwPayNowButton = document.getElementById("smcw_ppc_pay_now_button");
+    const smcwPayNowButton = document.getElementById("smcw_ppc_confirm_order_button");
 
     // Update the initial values of the DOM elements
     bukoPandanAvailableQuantity.textContent = bukoPandanQuantity;
@@ -265,10 +265,10 @@ function updateCheckboxesAndQuantitiesState() {
 // Order confirmation window
 initializeOrderConfirmationWindow();
 function initializeOrderConfirmationWindow() {
-    var smcw_ppc_pay_now_button = document.getElementById("smcw_ppc_pay_now_button");
+    var smcw_ppc_confirm_order_button = document.getElementById("smcw_ppc_confirm_order_button");
     var body = document.querySelector("body");
 
-    smcw_ppc_pay_now_button.onclick = function() {
+    smcw_ppc_confirm_order_button.onclick = function() {
         generateOrderReceiptCode();
         shop_modal_checkout_window.classList.add("close");
         setTimeout(function() {
@@ -420,7 +420,7 @@ function orderButtonEnabler() {
     const checkboxList = document.querySelectorAll('.smcw_card_checkbox');
     const numberList = document.querySelectorAll('.smcw_card_order_chosenquantity');
     const radioList = document.querySelectorAll('.radio');
-    const submitButton = document.querySelector('#smcw_ppc_pay_now_button');
+    const submitButton = document.querySelector('#smcw_ppc_confirm_order_button');
 
     function checkValidity() {
         let checkboxChecked = false;
@@ -473,7 +473,7 @@ function orderButtonEnabler() {
 }
 
 function orderButtonDisabler() {
-    const submitButton = document.querySelector('#smcw_ppc_pay_now_button');
+    const submitButton = document.querySelector('#smcw_ppc_confirm_order_button');
 
     submitButton.disabled = true;
 }
