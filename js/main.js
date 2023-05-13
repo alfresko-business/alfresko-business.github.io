@@ -60,6 +60,16 @@ mindanao_card_button.onclick = function() {
     window.location.href = "mindanao_tourist_spots.html"
 }
 
+var jigsaw_puzzle_play_button = document.getElementById("jigsaw_puzzle_play_button");
+jigsaw_puzzle_play_button.onclick = function() {
+    window.location.href = "jigsaw_puzzle.html";
+}
+
+var word_hunt_play_button = document.getElementById("word_hunt_play_button");
+word_hunt_play_button.onclick = function() {
+    window.location.href = "word_hunt.html";
+}
+
 // Checkout window
 initializeCheckoutWindow();
 function initializeCheckoutWindow() {
