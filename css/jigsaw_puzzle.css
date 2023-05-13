@@ -96,6 +96,257 @@ header img {
     fill: rgb(255, 255, 255);
 }
 
+.mc_details {
+    background-image: url(../resources/images/animated_shape_1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 180px;
+}
+
+.mc_card {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(151, 218, 228);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.mc_card img {
+    display: flex;
+}
+
+.mc_card_details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 80px 80px;
+    justify-content: space-between;
+}
+
+.mc_card_details button {
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(87, 152, 163);
+    background: none;
+    transition: .2s ease-out;
+    font-size: 18px;
+}
+
+.mc_card_details button:hover {
+    cursor: pointer;
+    background-color: rgb(87, 152, 163);
+    color: white;
+}
+
+.mc_image_wrapper {
+    width: 40%;
+    height: auto;
+}
+
+.mc_image_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructions {
+    padding: 100px 140px;
+    background-color: rgb(186, 234, 241);
+    font-size: 18px;
+}
+
+.game_modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+    transition: all .2s ease;
+    opacity: 0;
+}
+
+.game_modal.open {
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.game_modal.close {
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.game_window {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px 80px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80vw;
+    height: 95vh;
+    max-width: 80vw;
+    max-height: 95vh;
+    overflow: auto;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    transition: all .2s ease;
+}
+
+.game_window.close {
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.gw_picture_container {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gw_picture_container > div {
+    display: flex;
+    position: relative;
+    border-radius: 10px;
+    padding: 40px;
+    height: 120px;
+    flex: 1 0 calc(33% - 20px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all .2s ease;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+}
+
+.gw_picture_container > div:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .2s ease-in-out;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.401);
+}
+
+.gw_picture_container > div p {
+    transition: all .2s ease;
+    opacity: 0;
+}
+
+.gw_picture_container > div:hover p {
+    transition: all .2s ease;
+    opacity: 1;
+}
+
+.gw_picture_container > div * {
+    position: relative;
+    z-index: 2;
+}
+
+.gw_picture_container > div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.gw_banaue_rice_terraces {
+    background-image: url(../resources/images/banaue_rice_terraces.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_chocolate_hills {
+    background-image: url(../resources/images/chocolate_hills.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_rizal_park {
+    background-image: url(../resources/images/rizal_park.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_boracay_beach {
+    background-image: url(../resources/images/boracay_white_beach.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_banaue_rice_terraces {
+    background-image: url(../resources/images/banaue_rice_terraces.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_pagsanjan_falls {
+    background-image: url(../resources/images/pagsanjan_falls.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_intramuros {
+    background-image: url(../resources/images/intramuros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_taal_volcano {
+    background-image: url(../resources/images/taal_volcano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_mount_apo {
+    background-image: url(../resources/images/mount_apo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_lake_sebu {
+    background-image: url(../resources/images/lake_sebu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gw_maria_cristina_falls {
+    background-image: url(../resources/images/maria_cristina_falls.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
     background-color: rgb(18, 18, 18);
     color: white;
