@@ -96,6 +96,74 @@ header img {
     fill: rgb(255, 255, 255);
 }
 
+.main_content {
+    font-size: 18px;
+}
+
+.mc_details {
+    background-image: url(../resources/images/animated_shape.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 180px;
+}
+
+.mc_card {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(253, 236, 200);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+    overflow: hidden;
+}
+
+.mc_card img {
+    display: flex;
+}
+
+.mc_card_details {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 80px 80px;
+    justify-content: space-between;
+}
+
+.mc_card_details button {
+    padding: 10px 20px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgb(168, 148, 105);
+    background: none;
+    font-size: .7em;
+    margin-top: auto;
+    transition: .2s ease-out;
+    align-self: flex-start;
+}
+
+.mc_card_details button:hover {
+    cursor: pointer;
+    background-color: rgb(168, 148, 105);
+    color: white;
+}
+
+.mc_image_wrapper {
+    width: 40%;
+    height: auto;
+}
+
+.mc_image_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructions {
+    padding: 100px 140px;
+    background-color: rgb(255, 245, 222);
+}
+
 footer {
     background-color: rgb(18, 18, 18);
     color: white;
