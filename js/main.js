@@ -67,7 +67,7 @@ function initializeCheckoutWindow() {
     var order_now_button = document.getElementById("order_now_button");
     var shop_modal = document.getElementById("shop_modal");
     var body = document.querySelector("body");
-    
+
     order_now_button.onclick = function() {
         shop_modal.style.display = "block";
         setTimeout(function() {
@@ -100,7 +100,7 @@ function initializeCheckoutWindow() {
 displayOrderDetails();
 function displayOrderDetails() {
     // Get all the input number and checkbox elements
-    const quantity = document.querySelectorAll('.smscw_card_order_chosenquantity');
+    const quantity = document.querySelectorAll('.smcw_card_order_chosenquantity');
     const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
     const PRICE_PER_ITEM = 15;
     const TIME_PER_ITEM = 15;
@@ -160,7 +160,7 @@ function toggleCardBackgroundColor() {
             productCards.forEach((card, index) => {
                 card.style.backgroundColor = originalBgColors[index];
             });
-            
+
             paymentOptionCards.forEach(card => {
                 card.classList.remove('selected');
             });
@@ -183,12 +183,91 @@ function toggleCardBackgroundColor() {
     });
 }
 
+updateCheckboxesAndQuantitiesState();
+function updateCheckboxesAndQuantitiesState() {
+    // Define the initial quantity value for each drink
+    let bukoPandanQuantity = 40;
+    let coffeeQuantity = 40;
+    let mangoQuantity = 40;
+    let strawberryQuantity = 40;
+
+    // Get the necessary DOM elements
+    const bukoPandanAvailableQuantity = document.getElementById("buko_pandan_availablequantity");
+    const bukoPandanChosenQuantity = document.getElementById("buko_pandan_chosenquantity");
+    const bukoPandanCheckbox = document.querySelector("input[drink_name='Buko Pandan Jelly Drink']");
+    const coffeeAvailableQuantity = document.getElementById("coffee_availablequantity");
+    const coffeeChosenQuantity = document.getElementById("coffee_chosenquantity");
+    const coffeeCheckbox = document.querySelector("input[drink_name='Coffee Jelly Drink']");
+    const mangoAvailableQuantity = document.getElementById("mango_availablequantity");
+    const mangoChosenQuantity = document.getElementById("mango_chosenquantity");
+    const mangoCheckbox = document.querySelector("input[drink_name='Mango Jelly Drink']");
+    const strawberryAvailableQuantity = document.getElementById("strawberry_availablequantity");
+    const strawberryChosenQuantity = document.getElementById("strawberry_chosenquantity");
+    const strawberryCheckbox = document.querySelector("input[drink_name='Strawberry Jelly Drink']");
+    const smcwPayNowButton = document.getElementById("smcw_ppc_pay_now_button");
+
+    // Update the initial values of the DOM elements
+    bukoPandanAvailableQuantity.textContent = bukoPandanQuantity;
+    bukoPandanChosenQuantity.max = bukoPandanQuantity;
+    coffeeAvailableQuantity.textContent = coffeeQuantity;
+    coffeeChosenQuantity.max = coffeeQuantity;
+    mangoAvailableQuantity.textContent = mangoQuantity;
+    mangoChosenQuantity.max = mangoQuantity;
+    strawberryAvailableQuantity.textContent = strawberryQuantity;
+    strawberryChosenQuantity.max = strawberryQuantity;
+
+    // Add an event listener to the "Pay Now" button
+    smcwPayNowButton.addEventListener("click", () => {
+        // Update the quantity value for Buko Pandan Jelly Drink
+        bukoPandanQuantity -= bukoPandanChosenQuantity.value;
+        coffeeQuantity -= coffeeChosenQuantity.value;
+        mangoQuantity -= mangoChosenQuantity.value;
+        strawberryQuantity -= strawberryChosenQuantity.value;
+
+        // Disable the checkbox and input field if the quantity reaches 0
+        if (bukoPandanQuantity <= 0) {
+            bukoPandanQuantity = 0;
+            bukoPandanCheckbox.disabled = true;
+            bukoPandanChosenQuantity.disabled = true;
+        }
+
+        if (coffeeQuantity <= 0) {
+            coffeeQuantity = 0;
+            coffeeCheckbox.disabled = true;
+            coffeeChosenQuantity.disabled = true;
+        }
+
+        if (mangoQuantity <= 0) {
+            mangoQuantity = 0;
+            mangoCheckbox.disabled = true;
+            mangoChosenQuantity.disabled = true;
+        }
+
+        if (strawberryQuantity <= 0) {
+            strawberryQuantity = 0;
+            strawberryCheckbox.disabled = true;
+            strawberryChosenQuantity.disabled = true;
+        }
+
+        // Update the available quantity and max value of the input field
+        bukoPandanAvailableQuantity.textContent = bukoPandanQuantity;
+        bukoPandanChosenQuantity.max = bukoPandanQuantity;
+        coffeeAvailableQuantity.textContent = coffeeQuantity;
+        coffeeChosenQuantity.max = coffeeQuantity;
+        mangoAvailableQuantity.textContent = mangoQuantity;
+        mangoChosenQuantity.max = mangoQuantity;
+        strawberryAvailableQuantity.textContent = strawberryQuantity;
+        strawberryChosenQuantity.max = strawberryQuantity;
+    });
+}
+
+
 // Order confirmation window
 initializeOrderConfirmationWindow();
 function initializeOrderConfirmationWindow() {
     var smcw_ppc_pay_now_button = document.getElementById("smcw_ppc_pay_now_button");
     var body = document.querySelector("body");
-    
+
     smcw_ppc_pay_now_button.onclick = function() {
         generateOrderReceiptCode();
         shop_modal_checkout_window.classList.add("close");
@@ -209,12 +288,12 @@ function initializeOrderConfirmationWindow() {
             contentReset();
             orderButtonDisabler();
         }, 500);
-    }   
+    }
 }
 
 // Display order details in the preview section in real-time
 const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
-const quantityInputs = document.querySelectorAll('.smscw_card_order_chosenquantity');
+const quantityInputs = document.querySelectorAll('.smcw_card_order_chosenquantity');
 const orderDetails = document.querySelectorAll('.smpow_odc_ow_order_details');
 
 function updateOrderDetails(index) {
@@ -271,13 +350,13 @@ function paymentMethodEventListener() {
             }
             chosenPaymentMethod.textContent = text;
         });
-    }); 
+    });
 }
 
 // Generate subtotal
 calculateSubtotal();
 function calculateSubtotal() {
-    const quantity = document.querySelectorAll('.smscw_card_order_chosenquantity');
+    const quantity = document.querySelectorAll('.smcw_card_order_chosenquantity');
     const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
     const PRICE_PER_ITEM = 15;
 
@@ -339,7 +418,7 @@ function contentReset() {
 orderButtonEnabler();
 function orderButtonEnabler() {
     const checkboxList = document.querySelectorAll('.smcw_card_checkbox');
-    const numberList = document.querySelectorAll('.smscw_card_order_chosenquantity');
+    const numberList = document.querySelectorAll('.smcw_card_order_chosenquantity');
     const radioList = document.querySelectorAll('.radio');
     const submitButton = document.querySelector('#smcw_ppc_pay_now_button');
 
@@ -403,4 +482,4 @@ window.onbeforeunload = function() {
     inputReset();
     contentReset();
     orderButtonDisabler();
-  };
+};

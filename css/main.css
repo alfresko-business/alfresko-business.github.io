@@ -746,6 +746,10 @@ header img {
     cursor: pointer;
 }
 
+.smcw_card_checkbox_wrapper > input:disabled:hover {
+    cursor: not-allowed;
+}
+
 .smcw_card_image_wrapper {
     width: 80px;
     background-color: #FFAFBD;
