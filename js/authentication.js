@@ -18,6 +18,21 @@ login_switch_button.onclick = function () {
     login.style.display = "flex";
 }
 
+isLoggedIn();
+function isLoggedIn() {
+    const userLoggedIn  = localStorage.getItem("userLoggedIn");
+    const authentication_content = document.getElementById("authentication_content");
+    const logged_in = document.getElementById("logged_in");
+
+    if (userLoggedIn === "false") {
+        authentication_content.style.display = "block";
+        logged_in.style.display = "none";
+    } else {
+        authentication_content.style.display = "none";
+        logged_in.style.display = "block";
+    }
+}
+
 // Sign-up and login code
 // Take note that using IndexedDB is not recommended for an account authentication system because of the security risks it poses. We chose IndexedDB as our client-side database because this website is dedicated for local or offline use, as well as for the sake of implementing an easy sign up and login system. From a security standpoint, this is not recommended. Implementing this in your own projects can pose security risks.
 const dbName = "userDatabase";
@@ -85,7 +100,9 @@ function logIn(username, password) {
             alert("Login success.");
             console.log("User logged in");
             userLoggedIn = true;
-            enableFeatures()
+            localStorage.setItem("userLoggedIn", userLoggedIn);
+            enableFeatures();
+            window.location.href = "authentication.html";
         } else {
             alert("Invalid username and/or password. Please try again.");
             console.log("Incorrect username or password");
@@ -119,3 +136,12 @@ logInForm.addEventListener("submit", function (event) {
     logIn(username, password);
 });
 
+// Log out
+var logout_button = document.getElementById("logout");
+logout_button.onclick = function() {
+    alert("Logout successfully.");
+    console.log("User logged out");
+    userLoggedIn = false;
+    localStorage.setItem("userLoggedIn", userLoggedIn);
+    window.location.href = "authentication.html";
+}
