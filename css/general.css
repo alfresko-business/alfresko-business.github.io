@@ -134,6 +134,15 @@ footer {
     color: rgb(224, 224, 224);
 }
 
+#footer_email {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#footer_email:hover {
+    color: rgb(158, 158, 158);
+}
+
 .footer_container_2 {
     color: rgb(149, 149, 149);
     background-color: rgb(27, 27, 27);

@@ -9,6 +9,7 @@ var shop_button = document.getElementById("shop_button");
 var contact_button = document.getElementById("contact_button");
 var user_login_button = document.getElementById("user_login_button");
 var footer_logo = document.getElementById("footer_logo");
+var footer_email = document.getElementById("footer_email");
 
 header_logo.onclick = function() {
     window.location.href = "index.html";
@@ -22,14 +23,14 @@ shop_button.onclick = function() {
     window.location.href = "index.html#shop_section";
 }
 
-contact_button.onclick = function() {
-    window.location.href = "mailto:alfresko.business@gmail.com";
-}
-
 user_login_button.onclick = function() {
     window.location.href = "authentication.html";
 }
 
 footer_logo.onclick = function() {
     window.location.href = "index.html";
+}
+
+footer_email.onclick = function() {
+    window.location.href = "mailto:alfresko.business@gmail.com";
 }
