@@ -27,9 +27,12 @@ function isLoggedIn() {
     if (userLoggedIn === "false") {
         authentication_content.style.display = "block";
         logged_in.style.display = "none";
-    } else {
+    } else if (userLoggedIn === "true") {
         authentication_content.style.display = "none";
         logged_in.style.display = "block";
+    } else {
+        authentication_content.style.display = "block";
+        logged_in.style.display = "none";
     }
 }
 
