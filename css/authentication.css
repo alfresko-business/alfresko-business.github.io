@@ -1,7 +1,7 @@
 .authentication_content {
     position: relative;
-    height: 100vh;
-    background-image: url(../resources/images/mayon_volcano-aom-waifu2x.png);
+    height: 700px;
+    background-image: url('data:image/svg+xml,<svg id="visual" viewBox="0 0 960 540" width="960" height="540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g stroke-width="1" stroke-linejoin="bevel"><path d="M458.7 258L512.3 261L534.3 217Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M534.3 217L458.7 145L458.7 258Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M512.3 261L606 266L534.3 217Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M534.3 217L539.3 75L458.7 145Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M458.7 258L493.3 358L512.3 261Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M512.3 261L493.3 358L606 266Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M458.7 145L347 203L458.7 258Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M408.7 105L347 203L458.7 145Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M458.7 258L388.7 381L493.3 358Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M606 266L636 198L534.3 217Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M458.7 145L539.3 75L408.7 105Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M636 198L539.3 75L534.3 217Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M347 203L337 270L458.7 258Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M337 270L388.7 381L458.7 258Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M445.7 0L344 72L408.7 105Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M408.7 105L344 72L347 203Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M347 203L230.3 287L337 270Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M405.7 477L570.3 420L493.3 358Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M493.3 358L570.3 420L606 266Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M750.7 247L708.7 152L636 198Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M636 198L665 90L539.3 75Z" fill="%23e2d8ce" stroke="%23e2d8ce"></path><path d="M616 0L498.3 0L539.3 75Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M539.3 75L445.7 0L408.7 105Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M498.3 0L445.7 0L539.3 75Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M636 198L708.7 152L665 90Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M750.7 247L636 198L606 266Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M337 270L304 396L388.7 381Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M388.7 381L405.7 477L493.3 358Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M230.3 287L304 396L337 270Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M570.3 420L672 398L606 266Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M733.7 61L616 0L665 90Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M665 90L616 0L539.3 75Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M570.3 420L640 427L672 398Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M571.3 540L640 427L570.3 420Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M672 398L750.7 247L606 266Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M177.3 172L230.3 287L347 203Z" fill="%23e2d8ce" stroke="%23e2d8ce"></path><path d="M313 459L405.7 477L388.7 381Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M445.7 0L302 0L344 72Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M183.3 113L177.3 172L347 203Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M867.3 153L733.7 61L708.7 152Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M708.7 152L733.7 61L665 90Z" fill="%23dcd2c8" stroke="%23dcd2c8"></path><path d="M226.3 387L313 459L304 396Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M304 396L313 459L388.7 381Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M230.3 287L226.3 387L304 396Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M183.3 113L347 203L344 72Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M230.3 287L97.7 309L226.3 387Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M302 0L183.3 113L344 72Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M777.7 446L764.7 396L672 398Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M672 398L764.7 396L750.7 247Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M827.3 0L756.7 0L733.7 61Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M345 540L410.7 540L405.7 477Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M405.7 477L571.3 540L570.3 420Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M640 427L777.7 446L672 398Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M410.7 540L571.3 540L405.7 477Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M867.3 153L708.7 152L750.7 247Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M733.7 61L756.7 0L616 0Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M313 459L345 540L405.7 477Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M215.3 540L345 540L313 459Z" fill="%23dcd2c8" stroke="%23dcd2c8"></path><path d="M571.3 540L642 540L640 427Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M143.7 0L145.7 125L183.3 113Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M183.3 113L145.7 125L177.3 172Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M82.7 474L202.3 470L226.3 387Z" fill="%23e2d8ce" stroke="%23e2d8ce"></path><path d="M831.3 349L845.3 260L750.7 247Z" fill="%23e2d8ce" stroke="%23e2d8ce"></path><path d="M852.3 413L831.3 349L764.7 396Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M764.7 396L831.3 349L750.7 247Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M642 540L777.7 446L640 427Z" fill="%23e2d8ce" stroke="%23e2d8ce"></path><path d="M302 0L184.3 0L183.3 113Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M226.3 387L202.3 470L313 459Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M97.7 309L230.3 287L82.7 216Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M960 169L867.3 153L845.3 260Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M845.3 260L867.3 153L750.7 247Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M82.7 216L230.3 287L177.3 172Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M867.3 153L858.3 61L733.7 61Z" fill="%23e2d8ce" stroke="%23e2d8ce"></path><path d="M0 217L82.7 216L0 111Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M145.7 125L82.7 216L177.3 172Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M858.3 61L827.3 0L733.7 61Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M184.3 0L143.7 0L183.3 113Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M777.7 446L852.3 413L764.7 396Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M831.3 349L960 270L845.3 260Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M876.3 540L852.3 413L777.7 446Z" fill="%23dcd2c8" stroke="%23dcd2c8"></path><path d="M86.7 540L215.3 540L202.3 470Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M202.3 470L215.3 540L313 459Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M642 540L773.7 540L777.7 446Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M0 247L72.7 336L97.7 309Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M97.7 309L72.7 336L226.3 387Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M960 387L960 270L831.3 349Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M867.3 153L960 50L858.3 61Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M960 387L831.3 349L852.3 413Z" fill="%23d6ccc2" stroke="%23d6ccc2"></path><path d="M960 270L960 169L845.3 260Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M858.3 61L960 0L827.3 0Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M72.7 336L82.7 474L226.3 387Z" fill="%23d9cfc5" stroke="%23d9cfc5"></path><path d="M0 111L82.7 216L145.7 125Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M82.7 216L0 247L97.7 309Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M72.7 336L0 469L82.7 474Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path><path d="M0 217L0 247L82.7 216Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M0 247L0 330L72.7 336Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M143.7 0L0 111L145.7 125Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M960 433L960 387L852.3 413Z" fill="%23dfd5cb" stroke="%23dfd5cb"></path><path d="M960 169L960 50L867.3 153Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M773.7 540L876.3 540L777.7 446Z" fill="%23efe5da" stroke="%23efe5da"></path><path d="M0 540L86.7 540L82.7 474Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M82.7 474L86.7 540L202.3 470Z" fill="%23ebe1d7" stroke="%23ebe1d7"></path><path d="M876.3 540L960 433L852.3 413Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M960 50L960 0L858.3 61Z" fill="%23e5dbd1" stroke="%23e5dbd1"></path><path d="M143.7 0L0 0L0 111Z" fill="%23e8ded4" stroke="%23e8ded4"></path><path d="M0 330L0 469L72.7 336Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M876.3 540L960 540L960 433Z" fill="%23f5ebe0" stroke="%23f5ebe0"></path><path d="M0 469L0 540L82.7 474Z" fill="%23f2e8dd" stroke="%23f2e8dd"></path></g></svg>');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@
     z-index: 2;
 }
 
-.authentication_content::before {
+/* .authentication_content::before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,7 +23,7 @@
     background-color: rgba(0,0,0,0.2);
     backdrop-filter: blur(3px);
     z-index: 1;
-}
+} */
 
 .authentication_content h2 {
     font-size: 32px;
@@ -32,19 +32,18 @@
 
 .login {
     display: flex;
-    background-color: #fefefe;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 50px 80px;
     border-radius: 10px;
-    width: 50vw;
-    max-height: 95vh;
+    height: 500px;
+    width: 900px;
     overflow: auto;
-    gap: 40px;
     opacity: 1;
     transition: opacity .2s ease;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.401);
 }
 
 .login.close {
@@ -57,27 +56,52 @@
     transition: all .2s ease;
 }
 
-.login > div {
-    width: calc(50% - 20px);
+.login_image_wrapper {
+    width: 40%;
 }
 
 .login_image_wrapper > img {
     width: 100%;
     height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .login_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 60%;
+    padding: 10px 50px;
+}
+
+.login_logo_wrapper {
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+
+.login_logo_wrapper > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .login_container > form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
 }
 
 .login_container > form p {
     color: rgb(128, 128, 128);
+}
+
+.login_container > form input {
+    width: 100%;
 }
 
 .login_container > form span {
@@ -120,39 +144,59 @@
 
 .signup {
     display: none;
-    background-color: #fefefe;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 50px 80px;
     border-radius: 10px;
-    width: 50vw;
-    max-height: 95vh;
+    height: 500px;
+    width: 900px;
     overflow: auto;
-    gap: 40px;
     opacity: 1;
-    transition: all .2s ease;
+    transition: opacity .2s ease;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.401);
 }
 
-.signup > div {
-    width: calc(50% - 20px);
+.signup_image_wrapper {
+    width: 40%;
 }
+
 
 .signup_image_wrapper > img {
     width: 100%;
     height: 100%;
-    
+    display: block;
+    object-fit: cover;
 }
 
 .signup_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    width: 60%;
+    padding: 10px 50px;
+}
+
+.signup_logo_wrapper {
+    max-width: 200px;
+    margin-bottom: 40px;
+}
+
+.signup_logo_wrapper > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .signup_container > form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
 }
 
 .signup_container > form p {
