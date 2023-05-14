@@ -70,6 +70,27 @@ word_hunt_play_button.onclick = function() {
     window.location.href = "word_hunt.html";
 }
 
+factSlide();
+function factSlide() {
+    const slides = document.querySelectorAll('.rfdc_slide');
+    let currentSlide = 0;
+    const slideInterval = setInterval(nextSlide, 10000);
+
+    function nextSlide() {
+        const prevSlide = currentSlide;
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        hideAllSlides();
+        slides[currentSlide].classList.add('active');
+    }
+
+    function hideAllSlides() {
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+    }
+}
+
 // Checkout window
 initializeCheckoutWindow();
 function initializeCheckoutWindow() {
