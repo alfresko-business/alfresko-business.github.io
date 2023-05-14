@@ -1,7 +1,8 @@
 // Use for setting values on scroll-margin-top for certain sections of homepage so that the top content won't go underneath the sticky header
-const header = document.getElementById('header');
-const headerHeight = header.offsetHeight;
-document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+var scroll_to_top_button = document.getElementById("scroll_to_top_button");
+scroll_to_top_button.onclick = function() {
+    document.getElementById('welcome_section').scrollIntoView();
+}
 
 var scroll_to_tourist_destination_section_button = document.getElementById("scroll_to_tourist_destination_section_button");
 scroll_to_tourist_destination_section_button.onclick = function() {
