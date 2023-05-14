@@ -138,6 +138,17 @@
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.401);
 }
 
+.virtual_tour h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.iframe {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .image_preview_container {
     position: fixed;
     top: 0;
