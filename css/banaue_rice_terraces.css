@@ -3,7 +3,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
     display: flex;
     padding: 50px;
     font-size: 24px;
@@ -14,7 +13,7 @@
 
 .overview_image_wrapper {
     width: 30%;
-    height: 100%;
+    height: 300px;
     text-shadow: #ffffff;
 }
 
@@ -28,7 +27,10 @@
 }
 
 .overview_text_wrapper {
+    display: flex;
+    flex-direction: column;
     width: 40%;
+    justify-content: center;
 }
 
 .overview_text_wrapper h2 {
@@ -41,7 +43,7 @@
 }
 
 .content_container {
-    background-image: url('../resources/images/1.svg');
+    background: linear-gradient(135deg, rgba(180,255,213,1) 39%, rgba(164,241,224,1) 87%); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 140px;
