@@ -38,7 +38,7 @@ factSlide();
 function factSlide() {
     const slides = document.querySelectorAll('.rfdc_slide');
     let currentSlide = 0;
-    const slideInterval = setInterval(nextSlide, 10000);
+    const slideInterval = setInterval(nextSlide, 13000);
 
     function nextSlide() {
         const prevSlide = currentSlide;
@@ -324,20 +324,14 @@ function paymentMethodEventListener() {
             const payment_method = radio.value;
             let text;
             switch (payment_method) {
-                case 'Physical Cash':
-                    text = 'Physical Cash';
-                    break;
-                case 'Credit/Debit Card':
-                    text = 'Credit/Debit Card';
+                case 'Cash on Hand':
+                    text = 'Cash on Hand';
                     break;
                 case 'GCash':
                     text = 'GCash';
                     break;
                 case 'Maya':
                     text = 'Maya';
-                    break;
-                case 'Payment Center':
-                    text = 'Payment Center';
                     break;
                 default:
                     text = '';

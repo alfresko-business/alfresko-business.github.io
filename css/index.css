@@ -259,7 +259,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: progress 10s linear infinite;
+    animation: progress 13s linear infinite;
 }
 
 @keyframes progress {
@@ -695,6 +695,7 @@
 .smcw_pc_card {
     display: flex;
     flex: 1 0 calc(50% - 10px);
+    height: 70px;
     gap: 10px;
     padding: 10px 20px;
     border: 2px solid rgb(231, 231, 231);
