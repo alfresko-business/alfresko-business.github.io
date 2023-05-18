@@ -178,82 +178,104 @@ function toggleCardBackgroundColor() {
     });
 }
 
-updateCheckboxesAndQuantitiesState();
-function updateCheckboxesAndQuantitiesState() {
-    // Define the initial quantity value for each drink
-    let bukoPandanQuantity = 40;
-    let coffeeQuantity = 40;
-    let mangoQuantity = 40;
-    let strawberryQuantity = 40;
-
+shopCoreFunctionality();
+function shopCoreFunctionality() {
     // Get the necessary DOM elements
-    const bukoPandanAvailableQuantity = document.getElementById("buko_pandan_availablequantity");
-    const bukoPandanChosenQuantity = document.getElementById("buko_pandan_chosenquantity");
-    const bukoPandanCheckbox = document.querySelector("input[drink_name='Buko Pandan Jelly Drink']");
-    const coffeeAvailableQuantity = document.getElementById("coffee_availablequantity");
-    const coffeeChosenQuantity = document.getElementById("coffee_chosenquantity");
-    const coffeeCheckbox = document.querySelector("input[drink_name='Coffee Jelly Drink']");
-    const mangoAvailableQuantity = document.getElementById("mango_availablequantity");
-    const mangoChosenQuantity = document.getElementById("mango_chosenquantity");
-    const mangoCheckbox = document.querySelector("input[drink_name='Mango Jelly Drink']");
-    const strawberryAvailableQuantity = document.getElementById("strawberry_availablequantity");
-    const strawberryChosenQuantity = document.getElementById("strawberry_chosenquantity");
-    const strawberryCheckbox = document.querySelector("input[drink_name='Strawberry Jelly Drink']");
-    const smcwPayNowButton = document.getElementById("smcw_ppc_confirm_order_button");
+    var bukoPandanAvailableQuantity = document.getElementById("buko_pandan_availablequantity");
+    var bukoPandanChosenQuantity = document.getElementById("buko_pandan_chosenquantity");
+    var bukoPandanCheckbox = document.querySelector("input[drink_name='Pandalicious']");
+    var coffeeAvailableQuantity = document.getElementById("coffee_availablequantity");
+    var coffeeChosenQuantity = document.getElementById("coffee_chosenquantity");
+    var coffeeCheckbox = document.querySelector("input[drink_name='Hot Beans']");
+    var mangoAvailableQuantity = document.getElementById("mango_availablequantity");
+    var mangoChosenQuantity = document.getElementById("mango_chosenquantity");
+    var mangoCheckbox = document.querySelector("input[drink_name='Mangifera']");
+    var strawberryAvailableQuantity = document.getElementById("strawberry_availablequantity");
+    var strawberryChosenQuantity = document.getElementById("strawberry_chosenquantity");
+    var strawberryCheckbox = document.querySelector("input[drink_name='Berry Delicious']");
+    var smcwPayNowButton = document.getElementById("smcw_ppc_confirm_order_button");
+
+    if (!localStorage.getItem('isLoaded')) {
+        // Set the variables to 40
+        localStorage.setItem('bukoPandanQuantity', '40');
+        localStorage.setItem('coffeeQuantity', '40');
+        localStorage.setItem('mangoQuantity', '40');
+        localStorage.setItem('strawberryQuantity', '40');
+
+        // Set the flag to indicate that the page has been loaded
+        localStorage.setItem('isLoaded', 'true');
+    }
 
     // Update the initial values of the DOM elements
-    bukoPandanAvailableQuantity.textContent = bukoPandanQuantity;
-    bukoPandanChosenQuantity.max = bukoPandanQuantity;
-    coffeeAvailableQuantity.textContent = coffeeQuantity;
-    coffeeChosenQuantity.max = coffeeQuantity;
-    mangoAvailableQuantity.textContent = mangoQuantity;
-    mangoChosenQuantity.max = mangoQuantity;
-    strawberryAvailableQuantity.textContent = strawberryQuantity;
-    strawberryChosenQuantity.max = strawberryQuantity;
+    bukoPandanAvailableQuantity.textContent = localStorage.getItem("bukoPandanQuantity");
+    bukoPandanChosenQuantity.max = localStorage.getItem("bukoPandanQuantity");
+    coffeeAvailableQuantity.textContent = localStorage.getItem("coffeeQuantity");
+    coffeeChosenQuantity.max = localStorage.getItem("coffeeQuantity");
+    mangoAvailableQuantity.textContent = localStorage.getItem("mangoQuantity");
+    mangoChosenQuantity.max = localStorage.getItem("mangoQuantity");
+    strawberryAvailableQuantity.textContent = localStorage.getItem("strawberryQuantity");
+    strawberryChosenQuantity.max = localStorage.getItem("strawberryQuantity");
 
     // Add an event listener to the "Pay Now" button
     smcwPayNowButton.addEventListener("click", () => {
         // Update the quantity value for Buko Pandan Jelly Drink
-        bukoPandanQuantity -= bukoPandanChosenQuantity.value;
-        coffeeQuantity -= coffeeChosenQuantity.value;
-        mangoQuantity -= mangoChosenQuantity.value;
-        strawberryQuantity -= strawberryChosenQuantity.value;
+        var newBukoPandanQuantity = localStorage.getItem("bukoPandanQuantity");
+        var newCoffeeQuantity = localStorage.getItem("coffeeQuantity");
+        var newMangoQuantity = localStorage.getItem("mangoQuantity");
+        var newStrawberryQuantity = localStorage.getItem("strawberryQuantity");
+
+        newBukoPandanQuantity -= bukoPandanChosenQuantity.value;
+        newCoffeeQuantity -= coffeeChosenQuantity.value;
+        newMangoQuantity -= mangoChosenQuantity.value;
+        newStrawberryQuantity -= strawberryChosenQuantity.value;
+
+        localStorage.setItem("bukoPandanQuantity", newBukoPandanQuantity);
+        localStorage.setItem("coffeeQuantity", newCoffeeQuantity);
+        localStorage.setItem("mangoQuantity", newMangoQuantity);
+        localStorage.setItem("strawberryQuantity", newStrawberryQuantity);
+
+        updateCheckboxesAndQuantitiesState();
+
+        // Update the available quantity and max value of the input field
+        bukoPandanAvailableQuantity.textContent = newBukoPandanQuantity;
+        bukoPandanChosenQuantity.max = newBukoPandanQuantity;
+        coffeeAvailableQuantity.textContent = newCoffeeQuantity;
+        coffeeChosenQuantity.max = newCoffeeQuantity;
+        mangoAvailableQuantity.textContent = newMangoQuantity;
+        mangoChosenQuantity.max = newMangoQuantity;
+        strawberryAvailableQuantity.textContent = newStrawberryQuantity;
+        strawberryChosenQuantity.max = newStrawberryQuantity;
+    });
+
+    function updateCheckboxesAndQuantitiesState() {
+        var getBukoPandanQuantity = localStorage.getItem("bukoPandanQuantity");
+        var getCoffeeQuantity = localStorage.getItem("coffeeQuantity");
+        var getMangoQuantity = localStorage.getItem("mangoQuantity");
+        var getStrawberryQuantity = localStorage.getItem("strawberryQuantity");
 
         // Disable the checkbox and input field if the quantity reaches 0
-        if (bukoPandanQuantity <= 0) {
-            bukoPandanQuantity = 0;
+        if (getBukoPandanQuantity <= 0) {
             bukoPandanCheckbox.disabled = true;
             bukoPandanChosenQuantity.disabled = true;
         }
 
-        if (coffeeQuantity <= 0) {
-            coffeeQuantity = 0;
+        if (getCoffeeQuantity <= 0) {
             coffeeCheckbox.disabled = true;
             coffeeChosenQuantity.disabled = true;
         }
 
-        if (mangoQuantity <= 0) {
-            mangoQuantity = 0;
+        if (getMangoQuantity <= 0) {
             mangoCheckbox.disabled = true;
             mangoChosenQuantity.disabled = true;
         }
 
-        if (strawberryQuantity <= 0) {
-            strawberryQuantity = 0;
+        if (getStrawberryQuantity <= 0) {
             strawberryCheckbox.disabled = true;
             strawberryChosenQuantity.disabled = true;
         }
-
-        // Update the available quantity and max value of the input field
-        bukoPandanAvailableQuantity.textContent = bukoPandanQuantity;
-        bukoPandanChosenQuantity.max = bukoPandanQuantity;
-        coffeeAvailableQuantity.textContent = coffeeQuantity;
-        coffeeChosenQuantity.max = coffeeQuantity;
-        mangoAvailableQuantity.textContent = mangoQuantity;
-        mangoChosenQuantity.max = mangoQuantity;
-        strawberryAvailableQuantity.textContent = strawberryQuantity;
-        strawberryChosenQuantity.max = strawberryQuantity;
-    });
+    }
+    
+    updateCheckboxesAndQuantitiesState();
 }
 
 
