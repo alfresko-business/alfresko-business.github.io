@@ -224,10 +224,21 @@ function shopCoreFunctionality() {
         var newMangoQuantity = localStorage.getItem("mangoQuantity");
         var newStrawberryQuantity = localStorage.getItem("strawberryQuantity");
 
-        newBukoPandanQuantity -= bukoPandanChosenQuantity.value;
-        newCoffeeQuantity -= coffeeChosenQuantity.value;
-        newMangoQuantity -= mangoChosenQuantity.value;
-        newStrawberryQuantity -= strawberryChosenQuantity.value;
+        if (bukoPandanCheckbox.checked) {
+            newBukoPandanQuantity -= bukoPandanChosenQuantity.value;
+        }
+
+        if (coffeeCheckbox.checked) {
+            newCoffeeQuantity -= coffeeChosenQuantity.value;
+        }
+
+        if (mangoCheckbox.checked) {
+            newMangoQuantity -= mangoChosenQuantity.value;
+        }
+
+        if (strawberryCheckbox.checked) {
+            newStrawberryQuantity -= strawberryChosenQuantity.value;
+        }
 
         localStorage.setItem("bukoPandanQuantity", newBukoPandanQuantity);
         localStorage.setItem("coffeeQuantity", newCoffeeQuantity);
