@@ -13,6 +13,7 @@ scroll_to_top_button.onclick = function() {
 // For cards to make it clickable and redirect it to their corresponding pages
 var cards_banaue_rice_terraces = document.getElementById("cards_banaue_rice_terraces");
 var cards_puerto_princesa_underground_river = document.getElementById("cards_puerto_princesa_underground_river");
+var cards_el_nido_palawan = document.getElementById("cards_el_nido_palawan");
 
 cards_banaue_rice_terraces.onclick = function() {
     window.location.href = "banaue_rice_terraces.html";
@@ -21,3 +22,8 @@ cards_banaue_rice_terraces.onclick = function() {
 cards_puerto_princesa_underground_river.onclick = function() {
     window.location.href = "puerto_princesa_underground_river.html";
 }
+
+cards_el_nido_palawan.onclick = function() {
+    window.location.href = "el_nido_palawan.html";
+}
+
