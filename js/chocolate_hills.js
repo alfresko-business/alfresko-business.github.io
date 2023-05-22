@@ -7,7 +7,7 @@ scroll_to_top_button.onclick = function() {
 initializeImagePreviewContainer();
 function initializeImagePreviewContainer() {
     const body = document.querySelector("body");
-    const images = document.querySelectorAll('img');
+    const images = document.querySelectorAll('.gallery_grid_container img');
     const previewContainer = document.querySelector('.image_preview_container');
     const previewImage = document.querySelector('.image_preview_container img');
 
