@@ -18,6 +18,7 @@ var cards_hundred_island_national_park = document.getElementById("cards_hundred_
 var cards_mayon_volcano = document.getElementById("cards_mayon_volcano");
 var cards_pagsanjan_falls = document.getElementById("cards_pagsanjan_falls");
 var cards_taal_volcano = document.getElementById("cards_taal_volcano");
+var cards_national_musuem_of_fine_arts = document.getElementById("cards_national_musuem_of_fine_arts");
 
 cards_banaue_rice_terraces.onclick = function() {
     window.location.href = "banaue_rice_terraces.html";
@@ -45,4 +46,8 @@ cards_pagsanjan_falls.onclick = function() {
 
 cards_taal_volcano.onclick = function() {
     window.location.href = "taal_volcano.html";
+}
+
+cards_national_musuem_of_fine_arts.onclick = function() {
+    window.location.href = "national_musuem_of_fine_arts.html";
 }
