@@ -126,6 +126,7 @@
 
 .location_map_wrapper {
     width: 50%;
+    align-self: center;
 }
 
 .location_map_wrapper iframe {
