@@ -6,6 +6,14 @@
     font-family: helvetica, inter;
 }
 
+ul {
+   list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+ }
+
 html {
     scroll-behavior: smooth;
 }
