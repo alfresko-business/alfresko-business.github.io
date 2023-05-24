@@ -1,5 +1,5 @@
 .overview_container {
-    background-image: url('../resources/images/stacked_peaks_1.svg');
+    background-image: url('../resources/images/stacked_peaks-2.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,8 @@
     width: 30%;
     height: 300px;
     text-shadow: #ffffff;
+    display: flex;
+    align-self: center;
 }
 
 .overview_image_wrapper img {
@@ -43,7 +45,7 @@
 }
 
 .content_container {
-    background: linear-gradient(135deg, rgba(180,255,213,1) 39%, rgba(164,241,224,1) 87%); 
+    background: linear-gradient(135deg, rgba(230,214,196,1) 39%, rgba(193,174,153,1) 87%); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 140px;
@@ -124,6 +126,7 @@
 
 .location_map_wrapper {
     width: 50%;
+    align-self: center;
 }
 
 .location_map_wrapper iframe {
