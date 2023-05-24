@@ -17,6 +17,7 @@ var cards_el_nido_palawan = document.getElementById("cards_el_nido_palawan");
 var cards_hundred_island_national_park = document.getElementById("cards_hundred_island_national_park");
 var cards_mayon_volcano = document.getElementById("cards_mayon_volcano");
 var cards_pagsanjan_falls = document.getElementById("cards_pagsanjan_falls");
+var cards_taal_volcano = document.getElementById("cards_taal_volcano");
 
 cards_banaue_rice_terraces.onclick = function() {
     window.location.href = "banaue_rice_terraces.html";
@@ -40,4 +41,8 @@ cards_mayon_volcano.onclick = function() {
 
 cards_pagsanjan_falls.onclick = function() {
     window.location.href = "pagsanjan_falls.html";
+}
+
+cards_taal_volcano.onclick = function() {
+    window.location.href = "taal_volcano.html";
 }
