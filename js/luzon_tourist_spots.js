@@ -16,6 +16,7 @@ var cards_puerto_princesa_underground_river = document.getElementById("cards_pue
 var cards_el_nido_palawan = document.getElementById("cards_el_nido_palawan");
 var cards_hundred_island_national_park = document.getElementById("cards_hundred_island_national_park");
 var cards_mayon_volcano = document.getElementById("cards_mayon_volcano");
+var cards_pagsanjan_falls = document.getElementById("cards_pagsanjan_falls");
 
 cards_banaue_rice_terraces.onclick = function() {
     window.location.href = "banaue_rice_terraces.html";
@@ -35,4 +36,8 @@ cards_hundred_island_national_park.onclick = function() {
 
 cards_mayon_volcano.onclick = function() {
     window.location.href = "mayon_volcano.html";
+}
+
+cards_pagsanjan_falls.onclick = function() {
+    window.location.href = "pagsanjan_falls.html";
 }
