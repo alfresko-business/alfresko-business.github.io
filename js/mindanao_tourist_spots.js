@@ -6,6 +6,7 @@ scroll_to_top_button.onclick = function() {
 // For cards to make it clickable and redirect it to their corresponding pages
 var cards_aliwagwag_falls = document.getElementById("cards_aliwagwag_falls");
 var cards_lake_sebu = document.getElementById("cards_lake_sebu");
+var cards_mount_apo = document.getElementById("cards_mount_apo");
 
 
 cards_aliwagwag_falls.onclick = function() {
@@ -14,4 +15,8 @@ cards_aliwagwag_falls.onclick = function() {
 
 cards_lake_sebu.onclick = function() {
     window.location.href = "lake_sebu.html";
+}
+
+cards_mount_apo.onclick = function() {
+    window.location.href = "mount_apo.html";
 }
