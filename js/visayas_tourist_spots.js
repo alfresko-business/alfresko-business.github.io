@@ -12,6 +12,7 @@ var cards_kawasan_falls = document.getElementById("cards_kawasan_falls");
 var cards_red_rock_hot_spring = document.getElementById("cards_red_rock_hot_spring");
 var cards_casa_mariquit = document.getElementById("cards_casa_mariquit");
 var cards_siquijor_island = document.getElementById("cards_siquijor_island");
+var cards_hinagdanan_cave = document.getElementById("cards_hinagdanan_cave");
 
 cards_chocolate_hills.onclick = function() {
     window.location.href = "chocolate_hills.html";
@@ -39,4 +40,8 @@ cards_casa_mariquit.onclick = function() {
 
 cards_siquijor_island.onclick = function() {
     window.location.href = "siquijor_island.html";
+}
+
+cards_hinagdanan_cave.onclick = function() {
+    window.location.href = "hinagdanan_cave.html";
 }
