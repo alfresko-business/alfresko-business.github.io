@@ -11,6 +11,7 @@ var cards_the_ruins = document.getElementById("cards_the_ruins");
 var cards_kawasan_falls = document.getElementById("cards_kawasan_falls");
 var cards_red_rock_hot_spring = document.getElementById("cards_red_rock_hot_spring");
 var cards_casa_mariquit = document.getElementById("cards_casa_mariquit");
+var cards_siquijor_island = document.getElementById("cards_siquijor_island");
 
 cards_chocolate_hills.onclick = function() {
     window.location.href = "chocolate_hills.html";
@@ -34,4 +35,8 @@ cards_red_rock_hot_spring.onclick = function() {
 
 cards_casa_mariquit.onclick = function() {
     window.location.href = "casa_mariquit.html";
+}
+
+cards_siquijor_island.onclick = function() {
+    window.location.href = "siquijor_island.html";
 }
