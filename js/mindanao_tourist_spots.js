@@ -11,6 +11,7 @@ var cards_lake_agco = document.getElementById("cards_lake_agco");
 var cards_mount_hibok_hibok = document.getElementById("cards_mount_hibok_hibok");
 var cards_pasonanca_park = document.getElementById("cards_pasonanca_park");
 var cards_tinuy_an_falls = document.getElementById("cards_tinuy_an_falls");
+var cards_monfort_bat_sanctuary = document.getElementById("cards_monfort_bat_sanctuary");
 
 cards_aliwagwag_falls.onclick = function() {
     window.location.href = "aliwagwag_falls.html";
@@ -38,4 +39,8 @@ cards_pasonanca_park.onclick = function() {
 
 cards_tinuy_an_falls.onclick = function() {
     window.location.href = "tinuy_an_falls.html";
+}
+
+cards_monfort_bat_sanctuary.onclick = function() {
+    window.location.href = "monfort_bat_sanctuary.html";
 }
