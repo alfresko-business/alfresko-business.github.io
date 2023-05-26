@@ -9,6 +9,7 @@ var cards_lake_sebu = document.getElementById("cards_lake_sebu");
 var cards_mount_apo = document.getElementById("cards_mount_apo");
 var cards_lake_agco = document.getElementById("cards_lake_agco");
 var cards_mount_hibok_hibok = document.getElementById("cards_mount_hibok_hibok");
+var cards_pasonanca_park = document.getElementById("cards_pasonanca_park");
 
 cards_aliwagwag_falls.onclick = function() {
     window.location.href = "aliwagwag_falls.html";
@@ -28,4 +29,8 @@ cards_lake_agco.onclick = function() {
 
 cards_mount_hibok_hibok.onclick = function() {
     window.location.href = "mount_hibok_hibok.html";
+}
+
+cards_pasonanca_park.onclick = function() {
+    window.location.href = "pasonanca_park.html";
 }
