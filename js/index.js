@@ -330,7 +330,6 @@ function initializeOrderConfirmationWindow() {
     var body = document.querySelector("body");
 
     smcw_ppc_confirm_order_button.onclick = function() {
-        generateOrderReceiptCode();
         shop_modal_checkout_window.classList.add("close");
         setTimeout(function() {
             shop_modal_checkout_window.style.display = "none";
@@ -392,15 +391,27 @@ function paymentMethodEventListener() {
             switch (payment_method) {
                 case 'Cash on Hand':
                     text = 'Cash on Hand';
+                    document.getElementById('smpow_odc_stpw_na').style.display = "block";
+                    document.getElementById('smpow_odc_stpw_gcash').style.display = "none";
+                    document.getElementById('smpow_odc_stpw_maya').style.display = "none";
                     break;
                 case 'GCash':
                     text = 'GCash';
+                    document.getElementById('smpow_odc_stpw_na').style.display = "none";
+                    document.getElementById('smpow_odc_stpw_gcash').style.display = "block";
+                    document.getElementById('smpow_odc_stpw_maya').style.display = "none";
                     break;
                 case 'Maya':
                     text = 'Maya';
+                    document.getElementById('smpow_odc_stpw_na').style.display = "none";
+                    document.getElementById('smpow_odc_stpw_gcash').style.display = "none";
+                    document.getElementById('smpow_odc_stpw_maya').style.display = "block";
                     break;
                 default:
                     text = '';
+                    document.getElementById('smpow_odc_stpw_na').style.display = "block";
+                    document.getElementById('smpow_odc_stpw_gcash').style.display = "none";
+                    document.getElementById('smpow_odc_stpw_maya').style.display = "none";
                     break;
             }
             chosenPaymentMethod.textContent = text;
@@ -432,20 +443,6 @@ function calculateSubtotal() {
         });
         document.getElementById('smpow_odc_ow_total').textContent = "₱" + count * PRICE_PER_ITEM;
     }
-}
-
-// Generate order receipt code based on date and time
-function generateOrderReceiptCode() {
-    const currentDate = new Date();
-    const year = currentDate.getFullYear();
-    const month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
-    const day = ('0' + currentDate.getDate()).slice(-2);
-    const hours = ('0' + currentDate.getHours()).slice(-2);
-    const minutes = ('0' + currentDate.getMinutes()).slice(-2);
-    const seconds = ('0' + currentDate.getSeconds()).slice(-2);
-    const orderReceiptCode = `${year}${month}${day}_${hours}${minutes}${seconds}`;
-
-    document.getElementById('smpow_odc_ow_order_receipt_code').textContent = orderReceiptCode;
 }
 
 // Reset user input from checkboxes, radio buttons, and other related stuff

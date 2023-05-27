@@ -820,6 +820,9 @@
 }
 
 .smpow_odc_order_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 0 0 100%;
 }
 
@@ -833,7 +836,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .smpow_odc_total_wrapper {
@@ -841,15 +844,30 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.smpow_odc_order_receipt_code_wrapper {
-    flex: 1 0 30%;
+.smpow_odc_scan_to_pay_wrapper {
+    flex: 1 0 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+#smpow_odc_stpw_na, #smpow_odc_stpw_gcash, #smpow_odc_stpw_maya {
+    display: none;
+}
+
+#smpow_odc_stpw_gcash, #smpow_odc_stpw_maya {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#smpow_odc_stpw_gcash img, #smpow_odc_stpw_maya img {
+    width: 100%;
+    height: 100%;
 }
 
 .warning_modal {
