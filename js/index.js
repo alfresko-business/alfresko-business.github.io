@@ -58,17 +58,29 @@ function factSlide() {
 // Checkout window
 initializeCheckoutWindow();
 function initializeCheckoutWindow() {
-    var shop_modal_checkout_window = document.getElementById("shop_modal_checkout_window");
     var order_now_button = document.getElementById("order_now_button");
     var shop_modal = document.getElementById("shop_modal");
+    var shop_modal_checkout_window = document.getElementById("shop_modal_checkout_window");
+    var warning_modal = document.getElementById("warning_modal");
+    var warning_modal_content_window = document.getElementById("warning_modal_content_window");
     var body = document.querySelector("body");
+    const userLoggedIn  = localStorage.getItem("userLoggedIn");
+    const login_button  = document.getElementById("login_button");
 
     order_now_button.onclick = function() {
-        shop_modal.style.display = "block";
-        setTimeout(function() {
-            shop_modal.classList.add("open");
-        }, 50);
-        body.style.overflow = "hidden";
+        if (userLoggedIn === "true") {
+            shop_modal.style.display = "block";
+            setTimeout(function() {
+                shop_modal.classList.add("open");
+            }, 50);
+            body.style.overflow = "hidden";
+        } else {
+            warning_modal.style.display = "block";
+            setTimeout(function() {
+                warning_modal.classList.add("open");
+            }, 50);
+            body.style.overflow = "hidden";
+        }
     }
     
     shop_modal.addEventListener("click", (event) => {
@@ -89,6 +101,27 @@ function initializeCheckoutWindow() {
             }, 100);
         }
     });
+
+    warning_modal.addEventListener("click", (event) => {
+        if (event.target === warning_modal) {
+            warning_modal.classList.remove("open");
+            warning_modal.classList.add("close");
+            setTimeout(function() {
+                warning_modal.style.display = "none";
+                warning_modal.classList.remove("close");
+                warning_modal_content_window.classList.remove("close");
+                warning_modal_content_window.style.display = "flex";
+                body.style.overflow = "auto";
+                inputReset();
+                contentReset();
+                orderButtonDisabler();
+            }, 100);
+        }
+    });
+
+    login_button.onclick = function() {
+        window.location.href = "authentication.html";
+    }
 }
 
 // Subtotal, item, and preparation time counter
