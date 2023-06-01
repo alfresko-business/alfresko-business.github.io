@@ -50,19 +50,20 @@ html {
 
 
 
-
-
 header {
     position: sticky;
     top: 0;
     height: auto;
     width: 100%;
+    z-index: 3;
+}
+
+.main_header {
     display: flex;
     color: white;
     background-color: rgb(27, 27, 27);
     padding-left: 100px;
     padding-right: 100px;
-    z-index: 3;
 }
 
 header img {
@@ -102,6 +103,17 @@ header img {
 
 .header_button_wrapper:hover path {
     fill: rgb(255, 255, 255);
+}
+
+#hamburger_button {
+    display: none;
+}
+
+.sub_header {
+    display: none;
+    color: white;
+    background-color: rgb(27, 27, 27);
+    justify-content: center;
 }
 
 footer {
@@ -166,4 +178,62 @@ footer {
 .footer_container_2_scroll_up_wrapper img {
     max-width: 20px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    header img {
+        max-width: 180px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    .footer_container_1, .footer_container_2 {
+        padding: 70px 100px;
+    }
+
+    #footer_logo {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .main_header {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main_header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #home_button, #shop_button, #user_login_button {
+        display: none;
+    }
+
+    #hamburger_button {
+        display: block;
+    }
+
+    .shop_section_container {
+        padding: 10vh 50px;
+    }
+
+    .shop_product_card {
+        width: 100%;
+    }
+
+    .footer_container_1, .footer_container_2 {
+        padding: 5vh 50px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer_content {
+        width: auto;
+    }
 }

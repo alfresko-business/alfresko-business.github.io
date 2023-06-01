@@ -1,3 +1,5 @@
+
+
 .welcome_section {
     position: relative;
     background-image: url(../resources/images/beach-rabin_shasha_on_unsplash.jpg);
@@ -5,6 +7,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     scroll-margin-top: var(--header-height);
+}
+
+.wtw_maintext {
+    font-size: 70px;
+}
+
+.wtw_subtext {
+    font-size: 28px; margin-top: 20px;
 }
 
 .welcome_section_container {
@@ -224,7 +234,7 @@
     position: relative;
     width: 60%;
     text-align: center;
-    height: 350px;
+    height: 400px;
     flex-direction: column;
     gap: 30px;
 }
@@ -409,12 +419,12 @@
 }
 
 .shop_section h2 {
-    font-size: .9em;
+    font-size: 20px;
     color: rgb(255, 255, 255);
 }
 
 .shop_section p {
-    font-size: .8em;
+    font-size: 18px;
     color: rgb(231, 231, 231);
 }
 
@@ -475,7 +485,7 @@
 
 
 .shop_product_card_image_wrappper {
-    width: 60%;
+    width: 30%;
 }
 
 .shop_product_card img {
@@ -490,7 +500,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    width: 100%;
+    width: 70%;
 }
 
 .shop_button_wrapper {
@@ -669,7 +679,7 @@
 }
 
 .smcw_card_price_wrapper > p {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .smcw_ppc_subtotal_wrapper, .smcw_ppc_items_wrapper, .smcw_ppc_prep_time_wrapper {
@@ -782,6 +792,7 @@
     width: 60vw;
     overflow: auto;
     opacity: 0;
+    max-height: 95vh;
 }
 
 .shop_modal_purchased_order_window.open {
@@ -945,4 +956,245 @@
 
 .warning_modal_content_window > p {
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .wtw_maintext {
+        font-size: 50px;
+    }
+
+    .wtw_subtext {
+        font-size: 24px; margin-top: 20px;
+    }
+
+    .welcome_details_container button {
+        font-size: 18px;
+    }
+
+    .welcome_section_container {
+        padding: 10vh 120px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tourist_destination_section {
+        font-size: 18px;
+        padding: 10vh 100px;
+    }
+
+    .random_fact_section {
+        font-size: 18px;
+        padding: 10vh 100px;
+    }
+
+    .random_fact_section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .random_fact_heading_wrapper {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px
+    }
+
+    .random_fact_description_container {
+        width: 100%;
+        gap: 30px;
+        height: 100%;
+    }
+
+    .random_fact_description_container p {
+        margin-top: 10px;
+        color: rgb(231, 231, 231);
+    }
+
+    .games_section_container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 10vh 100px;
+        font-size: 18px;
+    }
+
+    .games_card_container {
+        width: 100%;
+    }
+
+    .games_card_heading_wrapper {
+        margin-bottom: 50px;
+    }
+
+    .games_card img {
+        max-width: 60px;
+    }
+
+    .shop_section h2 {
+        font-size: 20px;
+    }
+
+    .shop_section p {
+        font-size: 18px;
+    }
+
+    .shop_section_container {
+        font-size: 18px;
+        padding: 10vh 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .shop_product_card_heading_wrapper {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .shop_product_right_container {
+        width: 100%;
+    }
+
+    .shop_product_card {
+        width: calc(50% - 10px);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.201);
+        display: flex;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: .2s ease;
+    }
+
+    .shop_product_card_image_wrappper {
+        width: 40%;
+    }
+
+    .shop_button_wrapper > button {
+        font-size: 18px;
+    }
+
+    .shop_modal h1 {
+        font-size: 24px;
+    }
+
+    .shop_modal p {
+        font-size: 18px;
+    }
+
+    .shop_modal_purchased_order_window {
+        flex-direction: column;
+    }
+
+    .smpow_order_confirmed_container, .smpow_order_details_container {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .smpow_order_confirmed_container img {
+        max-width: 150px;
+    }
+    
+}
+
+@media only screen and (max-width: 1189px) {
+    .luzon_visayas_mindanao_container {
+        flex-direction: column;
+    }
+
+    .luzon_card, .visayas_card, .mindanao_card {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .shop_modal_checkout_window {
+        flex-direction: column;
+    }
+    
+    .smcw_preview_container p {
+        font-size: 18px;
+    } 
+
+    .smcw_pick_your_order_container, .smcw_preview_payment_container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+   
+
+    .wtw_maintext {
+        font-size: 40px;
+    }
+
+    .wtw_subtext {
+        font-size: 24px; margin-top: 20px;
+    }
+
+    .welcome_details_container button {
+        font-size: 18px;
+    }
+
+    .welcome_section_container {
+        padding: 15vh 0px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .tourist_destination_section {
+        font-size: 18px;
+        padding: 10vh 50px;
+    }
+
+    .tourist_destination_section > p {
+        margin-bottom: 50px;
+    }
+
+    .random_fact_section {
+        font-size: 18px;
+        padding: 10vh 50px;
+    }
+
+    .games_section_container {
+        padding: 10vh 50px;
+    }
+
+    .games_card {
+        flex-direction: column;
+        padding: 30px 40px;
+        width: 100%;
+    }
+
+    .shop_section_container {
+        padding: 10vh 50px;
+    }
+
+    .shop_product_card {
+        width: 100%;
+    }
+
+    .shop_modal_checkout_window {
+        padding: 25px 40px;
+    }
+
+    .smcw_card_image_wrapper {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-self: center;
+    }
+
+    .smcw_card {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .smcw_card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .smcw_card_image_wrapper {
+        display: none;
+    }
 }
