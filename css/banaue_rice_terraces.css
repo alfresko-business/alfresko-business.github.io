@@ -13,7 +13,7 @@
 
 .overview_image_wrapper {
     width: 30%;
-    height: 300px;
+    height: auto;
     text-shadow: #ffffff;
 }
 
@@ -176,6 +176,105 @@
 
 .image_preview_container img {
     display: block;
-    max-width: 100%;
-    height: 100%;
+    width: 100%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1200px) {
+    .overview_container {
+        font-size: 18px;
+        padding: 5vh 100px;
+        gap: 40px;
+    }
+
+    .content_container {
+        font-size: 18px;
+    }
+
+    .overview_text_wrapper h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .overview_container {
+        flex-direction: column;
+        padding: 5vh 120px;
+        gap: 20px;
+    }
+
+    .overview_image_wrapper {
+        height: 300px;
+        width: 100%;
+    }
+
+    .overview_text_wrapper {
+        width: 100%;
+    }
+
+    .overview_text_wrapper h2 {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .overview_container {
+        padding: 5vh 70px;
+    }
+
+    .content_container {
+        padding: 10vh 70px;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .gallery_grid_tile:nth-child(1), .gallery_grid_tile:nth-child(2), .gallery_grid_tile:nth-child(3), .gallery_grid_tile:nth-child(4), .gallery_grid_tile:nth-child(5), .gallery_grid_tile:nth-child(6){
+        grid-column: span 7;
+        grid-row: span 1;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .content_container {
+        padding: 10vh 50px;
+    }
+
+    .overview_container {
+        flex-direction: column;
+        padding: 5vh 50px;
+        gap: 20px;
+    }
+
+    .overview_image_wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    .overview_text_wrapper {
+        width: 100%;
+    }
+    
+    .gallery_grid_container, .location_container {
+        padding: 20px;
+    }
+
+    .location_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .location_map_wrapper, .location_text_wrapper {
+        width: 100%;
+    }
+    
+    .location_map_wrapper iframe {
+        height: 200px;
+    }
+
+    .virtual_tour iframe {
+        width: 100%;
+        height: 300px;
+    }
 }
