@@ -235,6 +235,23 @@
         grid-column: span 7;
         grid-row: span 1;
     }
+
+    .location_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .location_map_wrapper, .location_text_wrapper {
+        width: 100%;
+    }
+    
+    .location_map_wrapper iframe {
+        height: 200px;
+    }
+
+    .virtual_tour iframe {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -259,19 +276,6 @@
     
     .gallery_grid_container, .location_container {
         padding: 20px;
-    }
-
-    .location_container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .location_map_wrapper, .location_text_wrapper {
-        width: 100%;
-    }
-    
-    .location_map_wrapper iframe {
-        height: 200px;
     }
 
     .virtual_tour iframe {
