@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     scroll-margin-top: var(--header-height);
+    font-size: 18px;
 }
 
 .authentication_content * {
@@ -308,3 +309,50 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+    .login, .signup {
+        justify-content: center;
+        width: 500px;
+     }
+
+    .login_container, .signup_container {
+        width: 100%;
+    }
+
+    .login_image_wrapper, .signup_image_wrapper {
+        display: none;
+    }
+
+    .logged_in_content {
+        flex-direction: column;
+        width: 500px;
+    }
+
+    .logged_in_content_image_wrapper {
+        padding: 40px;
+        height: 200px;
+    }
+
+    .logged_in_content_image_wrapper, .logged_in_content_content_container {
+        width: 100%;
+    }
+
+    .logged_in_content_content_container {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .login, .signup {
+        justify-content: center;
+        width: 90%;
+     }
+
+     .logged_in_content {
+        width: 90%;
+    }
+    
+    .logged_in_content_image_wrapper {
+        height: 150px;
+    }
+}
