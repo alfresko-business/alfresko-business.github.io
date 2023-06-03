@@ -352,29 +352,31 @@ function initializeOrderConfirmationWindow() {
 }
 
 // Display order details in the preview section in real-time
-const checkboxes = document.querySelectorAll('.smcw_card_checkbox');
-const quantityInputs = document.querySelectorAll('.smcw_card_order_chosenquantity');
-const orderDetails = document.querySelectorAll('.smpow_odc_ow_order_details');
+var checkboxes = document.querySelectorAll('.smcw_card_checkbox');
+var quantityInputs = document.querySelectorAll('.smcw_card_order_chosenquantity');
+var orderDetails = document.querySelectorAll('.smpow_odc_ow_order_details');
 
-function updateOrderDetails(index) {
-    if (checkboxes[index].checked) {
-        const name = checkboxes[index].getAttribute('drink_name');
-        const quantity = quantityInputs[index].value;
-        orderDetails[index].textContent = `${name} x ${quantity} (12oz)`;
-    } else {
-        orderDetails[index].textContent = '';
-    }
+function updateOrderDetails() {
+    checkboxes.forEach((checkbox, index) => {
+        if (checkbox.checked) {
+            const name = checkbox.getAttribute('drink_name');
+            const quantity = quantityInputs[index].value;
+            orderDetails[index].textContent = `${name} x ${quantity} (12oz)`;
+        } else {
+            orderDetails[index].textContent = '';
+        }
+    });
 }
 
 checkboxes.forEach((checkbox, index) => {
     checkbox.addEventListener('change', () => {
-        updateOrderDetails(index);
+        updateOrderDetails();
     });
 });
 
 quantityInputs.forEach((input, index) => {
     input.addEventListener('input', () => {
-        updateOrderDetails(index);
+        updateOrderDetails();
     });
 });
 
