@@ -12,7 +12,7 @@
 
 .mc_card {
     display: flex;
-    height: 400px;
+    height: auto;
     width: 100%;
     border-radius: 10px;
     background-color: rgb(151, 218, 228);
@@ -30,7 +30,11 @@
     flex-direction: column;
     width: 60%;
     padding: 80px 80px;
-    justify-content: space-between;
+    gap: 40px;
+}
+
+.mc_card_details h1 {
+    margin-bottom: 10px;
 }
 
 .mc_card_details button {
@@ -64,6 +68,14 @@
     padding: 100px 140px;
     background-color: rgb(186, 234, 241);
     font-size: 18px;
+}
+
+.instructions h1 {
+    margin-bottom: 10px;
+}
+
+.instructions h1:nth-of-type(2) {
+    margin-top: 20px;
 }
 
 .game_modal {
@@ -198,7 +210,7 @@
 }
 
 .gw_boracay_beach {
-    background-image: url(../resources/images/boracay_white_beach.png);
+    background-image: url(../resources/images/boracay_island.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -253,57 +265,73 @@
     background-size: cover;
 }
 
-footer {
-    background-color: rgb(18, 18, 18);
-    color: white;
-    font-size: 24px;
+@media only screen and (max-width: 1200px) {
+    .instructions {
+        padding: 100px 120px;
+        background-color: rgb(186, 234, 241);
+        font-size: 18px;
+    }
 }
 
-.footer_container_1 {
-    display: flex;
-    gap: 50px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 70px 140px;
+@media only screen and (max-width: 1000px) {
+    .mc_card {
+        flex-direction: column-reverse;
+    }
+
+    .mc_image_wrapper, .mc_card_details {
+        width: 100%;
+    }
+
+    .mc_image_wrapper {
+        height: 200px;
+    }
+
+    .mc_card_details {
+        padding: 60px;
+    }
 }
 
-.footer_content {
-    width: 300px;
+@media only screen and (max-width: 840px) {
+    .instructions {
+        padding: 10vh 70px;
+        background-color: rgb(186, 234, 241);
+        font-size: 18px;
+    }
 }
 
-#footer_logo {
-    display: block;
-    max-width: 200px;
-    cursor: pointer;
+@media only screen and (max-width: 756px) {
+    .mc_details {
+        padding: 60px 70px;
+    }
+
+    .game_window {
+        padding: 40px;
+    }
 }
 
-.footer_logo_tagline_wrapper {
-    display: inline-flex;
-    flex-direction: column;
-}
+@media only screen and (max-width: 576px) {
+    .mc_details {
+        padding: 60px 50px;
+    }
 
-.footer_content_classifier {
-    font-weight: bold;
-}
+    .mc_card_details {
+        padding: 50px;
+    }
 
-.footer_content_description {
-    margin-top: 10px;
-    color: rgb(224, 224, 224);
-}
+    .instructions {
+        padding: 60px 50px;
+        background-color: rgb(186, 234, 241);
+        font-size: 18px;
+    }
 
-.footer_container_2 {
-    color: rgb(149, 149, 149);
-    background-color: rgb(27, 27, 27);
-    padding: 40px 140px;
-    display: flex;
-    justify-content: space-between;
-}
+    .game_window {
+        align-items: start;
+        padding: 40px;
+        max-width: 80vw;
+        width: 95vw;
+    }
 
-.footer_container_2 span {
-    color: #ffffff;
-}
-
-.footer_container_2_scroll_up_wrapper img {
-    max-width: 20px;
-    cursor: pointer;
+    .gw_picture_container {
+        width: 100%;
+    }
 }
