@@ -921,8 +921,9 @@
     padding: 50px 80px;
     border: 1px solid #888;
     border-radius: 10px;
-    width: 80vw;
+    width: auto;
     max-height: 95vh;
+    max-width: 95vw;
     overflow: auto;
 }
 
@@ -1081,18 +1082,8 @@
     }
 
     .shop_modal_purchased_order_window {
-        flex-direction: column;
+        width: 70vw;
     }
-
-    .smpow_order_confirmed_container, .smpow_order_details_container {
-        width: 100%;
-        padding: 40px;
-    }
-
-    .smpow_order_confirmed_container img {
-        max-width: 150px;
-    }
-    
 }
 
 @media only screen and (max-width: 1189px) {
@@ -1108,6 +1099,11 @@
 @media only screen and (max-width: 1000px) {
     .shop_modal_checkout_window {
         flex-direction: column;
+        gap: 60px;
+    }
+
+    .shop_modal_purchased_order_window {
+        width: 90vw;
     }
     
     .smcw_preview_container p {
@@ -1117,11 +1113,36 @@
     .smcw_pick_your_order_container, .smcw_preview_payment_container {
         width: 100%;
     }
+
+    .smcw_preview_payment_container {
+        gap: 60px;
+    }
+
+    .smpow_order_confirmed_container {
+        padding: 50px 60px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .shop_modal_checkout_window, .shop_modal_purchased_order_window {
+        max-height: 80vh;
+    }
+
+    .shop_modal_purchased_order_window {
+        flex-direction: column;
+    }
+
+    .smpow_order_confirmed_container, .smpow_order_details_container {
+        width: 100%;
+    }
+
+    .smpow_order_confirmed_container img {
+        max-width: 150px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
-   
-
     .wtw_maintext {
         font-size: 40px;
     }
@@ -1173,12 +1194,15 @@
     }
 
     .shop_modal_checkout_window {
-        padding: 25px 40px;
+        padding: 25px 30px;
+        width: 85vw;
+    }
+
+    .shop_modal_checkout_window p {
+        font-size: 18px;
     }
 
     .smcw_card_image_wrapper {
-        width: 30px;
-        height: 30px;
         display: flex;
         align-self: center;
     }
@@ -1186,14 +1210,40 @@
     .smcw_card {
         flex-direction: row;
     }
+
+    .smcw_card p {
+        font-size: 18px;
+    }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 453px) {
     .smcw_card {
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
     }
-    
+
+    /* .smcw_card p {
+        font-size: 14px;
+    } */
+
+    .smcw_card_checkbox_wrapper {
+        flex: 0 1 10%;
+    }
+
+    .smcw_card_image_wrapper {
+        flex: 0 1 20%;
+    }
+
+    .smcw_card_order_details_container {
+        flex: 0 1 60%;
+    }
+
+    .smcw_card_price_wrapper {
+        flex: 0 1 100%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
     .smcw_card_image_wrapper {
         display: none;
     }
