@@ -17,7 +17,7 @@ function initializeGameWindow() {
         }, 50);
         body.style.overflow = "hidden";
     }
-    
+
     game_modal.addEventListener("click", (event) => {
         if (event.target === game_modal) {
             game_modal.classList.remove("open");
@@ -29,6 +29,15 @@ function initializeGameWindow() {
             }, 100);
         }
     });
+    
+    if (window.innerWidth < 768) {
+        var divs = document.querySelectorAll('.gw_picture_container div');
+
+        divs.forEach(function (div) {
+            var p = div.querySelector('p');
+            p.style.opacity = '1';
+        });
+    } 
 }
 
 pictureClickListener();
