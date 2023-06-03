@@ -30,6 +30,7 @@ function isLoggedIn() {
     } else if (userLoggedIn === "true") {
         authentication_content.style.display = "none";
         logged_in.style.display = "block";
+        document.title = "User profile – Alfresko";
     } else {
         authentication_content.style.display = "block";
         logged_in.style.display = "none";
