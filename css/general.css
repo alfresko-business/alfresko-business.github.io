@@ -190,7 +190,7 @@ footer {
     }
 
     .footer_container_1, .footer_container_2 {
-        padding: 70px 100px;
+        padding: 40px 120px;
     }
 
     #footer_logo {
@@ -202,6 +202,10 @@ footer {
     .main_header {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .footer_container_1, .footer_container_2 {
+        padding: 5vh 70px;
     }
 }
 
