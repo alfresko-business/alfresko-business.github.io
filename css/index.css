@@ -2,7 +2,7 @@
 
 .welcome_section {
     position: relative;
-    background-image: url(../resources/images/beach-rabin_shasha_on_unsplash.jpg);
+    background-image: url(../resources/images/beach-rabin_shasha_on_unsplash.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +169,7 @@
 }
 
 .visayas_card {
-    background-image: url("../resources/images/chocolate_hills.jpg");
+    background-image: url("../resources/images/chocolate_hills.webp");
 }
 
 .visayas_card::before {
@@ -189,7 +189,7 @@
 }
 
 .mindanao_card {
-    background-image: url("../resources/images/aliwagwag_falls_eco_park.jpg");
+    background-image: url("../resources/images/aliwagwag_falls_eco_park.webp");
 }
 
 .mindanao_card::before {
@@ -283,7 +283,7 @@
 }
 
 .games_section {
-    background-image: url("../resources/images/cartoon_scenery_background-upklyak_on_freepik.jpg");
+    background-image: url("../resources/images/cartoon_scenery_background-upklyak_on_freepik.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
