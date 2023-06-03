@@ -13,7 +13,7 @@
 
 .mc_card {
     display: flex;
-    height: 400px;
+    height: auto;
     width: 100%;
     border-radius: 10px;
     background-color: rgb(253, 236, 200);
@@ -31,7 +31,11 @@
     flex-direction: column;
     width: 60%;
     padding: 80px 80px;
-    justify-content: space-between;
+    gap: 40px;
+}
+
+.mc_card_details h1 {
+    margin-bottom: 10px;
 }
 
 .mc_card_details button {
@@ -70,6 +74,14 @@
     font-size: 18px;
 }
 
+.instructions h1 {
+    margin-bottom: 10px;
+}
+
+.instructions h1:nth-of-type(2) {
+    margin-top: 20px;
+}
+
 .game_modal {
     display: none;
     position: fixed;
@@ -106,8 +118,75 @@
     padding: 50px 80px;
     border: 1px solid #888;
     border-radius: 10px;
-    width: auto;
     max-height: 95vh;
     overflow: auto;
     justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .instructions {
+        padding: 100px 120px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .mc_card {
+        flex-direction: column-reverse;
+    }
+
+    .mc_image_wrapper, .mc_card_details {
+        width: 100%;
+    }
+
+    .mc_image_wrapper {
+        height: 200px;
+    }
+
+    .mc_card_details {
+        padding: 60px;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .instructions {
+        padding: 10vh 70px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .mc_details {
+        padding: 60px 70px;
+    }
+
+    .game_window {
+        padding: 40px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .mc_details {
+        padding: 60px 50px;
+    }
+
+    .mc_card_details {
+        padding: 50px;
+    }
+
+    .instructions {
+        padding: 60px 50px;
+        font-size: 18px;
+    }
+
+    .game_window {
+        align-items: start;
+        padding: 40px;
+        max-width: 80vw;
+        width: 95vw;
+    }
+
+    .gw_picture_container {
+        width: 100%;
+    }
 }
