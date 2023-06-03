@@ -5,8 +5,7 @@
     background-size: cover;
     display: flex;
     padding: 50px;
-    font-size: 24px;
-    gap: 80px;
+    gap: 40px;
     justify-content: center;
     scroll-margin-top: var(--header-height);
 }
@@ -34,7 +33,6 @@
 }
 
 .overview_text_wrapper h2 {
-    font-size: 48px;
     margin-bottom: 20px;
 }
 
@@ -47,7 +45,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 140px;
-    font-size: 24px;
 }
 
 .overview h1 {
@@ -180,18 +177,15 @@
 
 @media only screen and (max-width: 1200px) {
     .overview_container {
-        font-size: 18px;
         padding: 5vh 100px;
-        gap: 40px;
-    }
-
-    .content_container {
-        font-size: 18px;
     }
 
     .overview_text_wrapper h2 {
-        font-size: 32px;
         margin-bottom: 10px;
+    }
+
+    .content_container {
+        padding: 100px 120px;
     }
 }
 
@@ -243,7 +237,7 @@
     }
     
     .location_map_wrapper iframe {
-        height: 200px;
+        height: 300px;
     }
 
     .virtual_tour iframe {

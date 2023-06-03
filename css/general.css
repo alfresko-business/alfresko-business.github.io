@@ -48,7 +48,9 @@ html {
     font-weight: bold;
 }
 
-
+body {
+    font-size: 18px;
+}
 
 header {
     position: sticky;
@@ -62,13 +64,13 @@ header {
     display: flex;
     color: white;
     background-color: rgb(27, 27, 27);
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 header img {
     padding: 20px;
-    max-width: 200px;
+    max-width: 180px;
     display: block;
 }
 
@@ -119,7 +121,6 @@ header img {
 footer {
     background-color: rgb(18, 18, 18);
     color: white;
-    font-size: 24px;
 }
 
 .footer_container_1 {
@@ -127,7 +128,7 @@ footer {
     gap: 50px;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 70px 140px;
+    padding: 60px 140px;
 }
 
 .footer_content {
@@ -136,7 +137,7 @@ footer {
 
 #footer_logo {
     display: block;
-    max-width: 200px;
+    max-width: 145px;
     cursor: pointer;
 }
 
@@ -181,20 +182,13 @@ footer {
 }
 
 @media only screen and (max-width: 1200px) {
-    header img {
-        max-width: 180px;
-    }
-
-    footer {
-        font-size: 18px;
+    .main_header {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
     .footer_container_1, .footer_container_2 {
-        padding: 40px 120px;
-    }
-
-    #footer_logo {
-        max-width: 150px;
+        padding: 70px 120px;
     }
 }
 
@@ -205,7 +199,7 @@ footer {
     }
 
     .footer_container_1, .footer_container_2 {
-        padding: 5vh 70px;
+        padding: 50px 70px;
     }
 }
 
@@ -232,7 +226,7 @@ footer {
     }
 
     .footer_container_1, .footer_container_2 {
-        padding: 5vh 50px;
+        padding: 40px 50px;
         flex-direction: column;
         gap: 30px;
     }
