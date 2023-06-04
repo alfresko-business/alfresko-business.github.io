@@ -196,21 +196,21 @@
 }
 
 .gw_chocolate_hills {
-    background-image: url(../resources/images/chocolate_hills.jpg);
+    background-image: url(../resources/images/chocolate_hills.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .gw_rizal_park {
-    background-image: url(../resources/images/rizal_park.jpg);
+    background-image: url(../resources/images/rizal_park.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .gw_boracay_beach {
-    background-image: url(../resources/images/boracay_island.png);
+    background-image: url(../resources/images/boracay_island.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@
 }
 
 .gw_intramuros {
-    background-image: url(../resources/images/intramuros.jpg);
+    background-image: url(../resources/images/intramuros.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
