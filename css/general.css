@@ -148,11 +148,20 @@ footer {
 
 .footer_content_classifier {
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .footer_content_description {
-    margin-top: 10px;
     color: rgb(224, 224, 224);
+}
+
+#footer_contact_number {
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+#footer_contact_number:hover {
+    color: rgb(158, 158, 158);
 }
 
 #footer_email {
@@ -161,6 +170,15 @@ footer {
 }
 
 #footer_email:hover {
+    color: rgb(158, 158, 158);
+}
+
+#footer_location {
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#footer_location:hover {
     color: rgb(158, 158, 158);
 }
 

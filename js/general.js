@@ -12,6 +12,7 @@ var sh_user_login_button = document.getElementById("sh_user_login_button");
 var user_login_button = document.getElementById("user_login_button");
 var footer_logo = document.getElementById("footer_logo");
 var footer_email = document.getElementById("footer_email");
+var footer_location = document.getElementById("footer_location");
 var hamburger_button = document.getElementById("hamburger_button");
 var sub_header = document.getElementById("sub_header");
 
@@ -59,6 +60,10 @@ footer_logo.onclick = function() {
 
 footer_email.onclick = function() {
     window.location.href = "mailto:alfresko.business@gmail.com";
+}
+
+footer_location.onclick = function() {
+    window.location.href = "https://goo.gl/maps/GLnTcryyHhBsZn6Z8?coh=178573&entry=tt";
 }
 
 window.addEventListener('resize', function () {
