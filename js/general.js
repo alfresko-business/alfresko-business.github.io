@@ -13,6 +13,8 @@ var user_login_button = document.getElementById("user_login_button");
 var footer_logo = document.getElementById("footer_logo");
 var footer_email = document.getElementById("footer_email");
 var footer_location = document.getElementById("footer_location");
+var footer_website_source_code = document.getElementById("footer_website_source_code");
+var footer_references = document.getElementById("footer_references");
 var hamburger_button = document.getElementById("hamburger_button");
 var sub_header = document.getElementById("sub_header");
 
@@ -64,6 +66,14 @@ footer_email.onclick = function() {
 
 footer_location.onclick = function() {
     window.location.href = "https://goo.gl/maps/GLnTcryyHhBsZn6Z8?coh=178573&entry=tt";
+}
+
+footer_website_source_code.onclick = function() {
+    window.location.href = "https://github.com/explore-alfresko/explore-alfresko.github.io";
+}
+
+footer_references.onclick = function() {
+    window.location.href = "https://github.com/explore-alfresko/explore-alfresko.github.io#creditsreferences";
 }
 
 window.addEventListener('resize', function () {
