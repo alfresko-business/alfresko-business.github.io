@@ -230,10 +230,10 @@ function shopCoreFunctionality() {
 
     if (!localStorage.getItem('isLoaded')) {
         // Set the variables to 40
-        localStorage.setItem('bukoPandanQuantity', '10');
-        localStorage.setItem('coffeeQuantity', '10');
-        localStorage.setItem('mangoQuantity', '10');
-        localStorage.setItem('strawberryQuantity', '10');
+        localStorage.setItem('bukoPandanQuantity', '14');
+        localStorage.setItem('coffeeQuantity', '15');
+        localStorage.setItem('mangoQuantity', '16');
+        localStorage.setItem('strawberryQuantity', '13');
 
         // Set the flag to indicate that the page has been loaded
         localStorage.setItem('isLoaded', 'true');
