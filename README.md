@@ -1,13 +1,31 @@
 # Alfresko
 
+## Introduction 
+Alfresko is an educational website that aims to promote tourist spots in the Philippines. This project contains educational content for each featured tourist spot, as well as games and random facts of some tourist destinations. The project was created as a requirement for Grade 12 students of STI College Novaliches to showcase their talents and skills aligned with their strand for the SHS ILS Expo 2023. The theme of the expo focuses on promoting the culture and traditions of the Philippines.
+
+## Features
+- <b>Educational Articles</b>: Each tourist spot has its own dedicated content, providing an overview or history of the location, highlighting its unique characteristics, and more.
+- <b>Virtual Tour</b>: Users can explore the tourist spots without physically visiting them through our Virtual Tour feature. By utilizing Google Maps' Street View, users can virtually experience the ambiance and appearance of the tourist spots.
+- <b>3D Map</b>: We have developed a detailed 3D Map for two prominent tourist spots, Mayon Volcano and Taal Volcano. Users can immerse themselves in these virtual environments, exploring the volcanoes from various angles and interacting with them.
+- <b>Games</b>: The website offers two engaging games, Jigsaw Puzzle and Word Hunt. Users can enjoy these games while simultaneously learning about different aspects of the tourist spots.
+- <b>Shop</b>: Our website also features a shop where we promote and sell a variety of flavored drinks.
+
+## Reminders
+- For the best user experience, we highly recommend using Google Chrome when browsing our website.
+- No login/registration data will be collected from users. All data processing related to this occurs locally in the user's browser.
+- Firefox users may encounter an error when logging in or signing up. This issue cannot be resolved by us as it is a problem between IndexedDB and Firefox itself.
+- IndexedDB was used for the implementation of the user authentication system. Therefore, we strongly advise against using this database to implement your own user authentication system. From a security standpoint, it is not highly recommended as user data is exposed in the user's local browser storage and may be prone to data leaks. We only used this as our client-side database since it was intended for offline or local use and for implementing an easy user authentication system.
+- The Shop section of our website is only meant for people who will order our drinks from our physical location. We do not receive any order requests through our website. Implementing an actual ordering system for our shop is very unlikely to happen as it is beyond our ability and scope.
+
+<br>
+<br>
+
 ## Credits/References
 
 ### Tools
 - Canva - For project logo
 - [Google's Material Symbols and Icons](https://fonts.google.com/icons) - For icons used in website
 - [Haikei](https://haikei.app/), [BGJar](https://bgjar.com/) - For generating background SVGs
-
-<br>
 
 ### Links to photos and articles of each tourist spot
 
