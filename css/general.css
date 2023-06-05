@@ -218,7 +218,7 @@ footer {
     cursor: pointer;
 }
 
-#footer_website_source_code:hover, #footer_references:hover {
+#footer_website_source_code, #footer_references {
     transition: all .2s ease;
 }
 
@@ -234,7 +234,7 @@ footer {
     }
 
     .footer_container_1, .footer_container_2 {
-        padding: 4s0px 120px;
+        padding: 40px 120px;
     }
 }
 
