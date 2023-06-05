@@ -950,6 +950,16 @@
     margin-bottom: 40px;
 }
 
+#footer_reset_shop_data {
+    transition: all .2s ease;
+}
+
+#footer_reset_shop_data:hover {
+    color: rgb(158, 158, 158);
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
 @media only screen and (max-width: 1200px) {
     .wtw_maintext {
         font-size: 50px;

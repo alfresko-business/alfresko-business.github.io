@@ -11,17 +11,17 @@ scroll_to_tourist_destination_section_button.onclick = function() {
 
 var luzon_card_button = document.getElementById("luzon_card_button");
 luzon_card_button.onclick = function() {
-    window.location.href = "luzon_tourist_spots.html"
+    window.location.href = "luzon_tourist_spots.html";
 }
 
 var visayas_card_button = document.getElementById("visayas_card_button");
 visayas_card_button.onclick = function() {
-    window.location.href = "visayas_tourist_spots.html"
+    window.location.href = "visayas_tourist_spots.html";
 }
 
 var mindanao_card_button = document.getElementById("mindanao_card_button");
 mindanao_card_button.onclick = function() {
-    window.location.href = "mindanao_tourist_spots.html"
+    window.location.href = "mindanao_tourist_spots.html";
 }
 
 var jigsaw_puzzle_play_button = document.getElementById("jigsaw_puzzle_play_button");
@@ -530,6 +530,15 @@ function orderButtonDisabler() {
     const submitButton = document.querySelector('#smcw_ppc_confirm_order_button');
 
     submitButton.disabled = true;
+}
+
+var footer_reset_shop_data = document.getElementById("footer_reset_shop_data");
+footer_reset_shop_data.onclick = function () {
+    localStorage.setItem('bukoPandanQuantity', '14');
+    localStorage.setItem('coffeeQuantity', '15');
+    localStorage.setItem('mangoQuantity', '16');
+    localStorage.setItem('strawberryQuantity', '13');
+    window.location.href = "index.html";
 }
 
 window.onbeforeunload = function() {
